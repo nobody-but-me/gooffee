@@ -13,21 +13,18 @@
       
     </header>
     
-    <main>
-      
-      <house>
-	
-	<div class="house_floor"></div>
-	<div class="house_floor">
-	  
-	  <img class="room" src="./src/rooms/writing-room.webp"/>
-	  <img class="room" src="./src/rooms/first-room.webp"/>
-	  <img class="room" src="./src/rooms/creativity-room.webp"/>
-	  
-	</div>
-	<div class="house_floor"></div>
-	
-      </house>
+    <main id="main">
+      <div id="panning-container">
+	<house id="house">
+	  <div class="house_floor"></div>
+	  <div class="house_floor">
+	    <img class="room" src="./src/rooms/writing-room.webp"/>
+	    <img class="room" src="./src/rooms/first-room.webp"/>
+	    <img class="room" src="./src/rooms/creativity-room.webp"/>
+	  </div>
+	  <div class="house_floor"></div>
+	</house>
+      </div>
       
     </main>
     
@@ -36,4 +33,5 @@
     </footer>
     
   </body>
+  <script src="./panning_movement.js"></script>
 </html>

@@ -32,3 +32,15 @@ house {
     min-height: 100px;
     min-width:  100px;
 }
+
+#panning-container {
+    width:  100%;
+    height: 100%;
+    
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+
+#house {
+}
