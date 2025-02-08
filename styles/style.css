@@ -32,6 +32,8 @@ house {
     display:                flex;
     justify-content:        center;
     flex-direction:         column;
+    
+    overflow-x:             hidden;
 }
 
 .house_floor {
@@ -92,4 +94,18 @@ house {
     display:                flex;
     justify-content:        center;
     align-items:            center;
+}
+
+.invisible_button {
+    /* border:                 2px dashed white; */
+    border:                 none;
+    background:             none;
+    
+    position:               absolute;
+    transform:              translate(-50%, -50%);
+    min-height:             100px;
+    min-width:              100px;
+    
+    border-radius:          15px;
+    outline:                none;
 }

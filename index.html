@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title> Gooffee </title>
+    <link rel="stylesheet" href="./styles/tooltip.css">
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
@@ -23,7 +24,20 @@
 	  </div>
 	  <div class="house_floor">
 	    <img class="room" src="./src/rooms/writing-room.webp"/>
-	    <img class="room" src="./src/rooms/first-room.webp"/>
+	    <div>
+	      <!-- Envelhecer é observar, quieto, a extinção do caminho trilhado -->
+	      <img class="room" src="./src/rooms/first-room.webp"/>
+	      <input 
+		onclick="
+			 window.location.href= 'template';
+		"
+		style="min-height: 200px; transform: translate(-190%, 60%);"
+		class="invisible_button" 
+		type="button" 
+		value="" 
+	      />
+	      
+	    </div>
 	    <img class="room" src="./src/rooms/creativity-room.webp"/>
 	  </div>
 	  <div class="house_floor">
@@ -49,5 +63,5 @@
     </footer>
     
   </body>
-  <script src="./panning_movement.js"></script>
+  <!-- <script src="./panning_movement.js"></script> -->
 </html>
