@@ -1,7 +1,8 @@
 
 html, body {
     font-family:            "Courier New", "Courier", "Times New Roman";
-    background-color:       darkblue;
+    background:             black;
+    
     color:                  white;
     
     margin:                 0px !important;
@@ -24,6 +25,7 @@ html, body {
     display:                flex;
     justify-content:        center;
     flex-direction:         row;
+    background:             linear-gradient(0deg, rgba(26,25,64,1) 15%, rgba(26,50,80,1) 65%, rgba(25,120,227,1) 100%);
 }
 
 house {
