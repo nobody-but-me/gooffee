@@ -1,6 +1,30 @@
 
+a:link {
+	color: #5886fc;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited {
+	color: #FFDB94;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover {
+	color: #395392;
+	background-color: transparent;
+	text-decoration: underline;
+}
+a:active {
+	color: #0D408E;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+
 html, body {
-    font-family:            "Courier New", "Courier", "Times New Roman";
+    font-family:            "MathJax_Typewriter" "Courier New", "Courier", "Times New Roman";
+    line-height:            1.5em;
+    letter-spacing:         2px;
     background-color:       black;
     color:                  white;
     
@@ -26,10 +50,35 @@ body {
     justify-content: center;
     flex-direction:  row;
     align-content:   center;
+    align-items:     center;
+    
+    height: 100%;
 }
 
 #content {
-    min-width: 100%;
+    min-height:       50%;
+    height:           90%;
+    min-width:        100px;
+    width:            800px;
+    max-width:        800px;
+    
+    overflow-x:       hidden;
+    overflow-y:       auto;
+    
+    padding-right:     20px;
+}
+
+.text_bubble {
+    margin-top:       15px;
+}
+.text_bubble p, .text_bubble ul {
+    background-color: rgba(7, 7, 7, 255);
+    border:           2px solid rgba(3, 3, 3, 255);
+    border-radius:    10px;
+    padding: 20px;
+}
+.text_bubble ul {
+    padding-left: 40px;
 }
 
 .centralizer {

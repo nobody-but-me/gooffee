@@ -24,25 +24,16 @@
 	  </div>
 	  <div class="house_floor">
 	    <img class="room" src="./src/rooms/writing-room.webp"/>
-	    <div class="tooltip">
-	      <!-- <div id="writing-room-button" class="tooltip"> -->
-	      <!-- 	<a href="https://asgooffeeasme.neocities.org/loadings/loading2writing"><div style="width: 100%; height: 100%;"></div></a> -->
-	      <!-- 	<span class="tooltip-text">Writing?</span> -->
-	      <!-- </div> -->
-	      
+	    <div>
 	      <!-- Envelhecer é observar, quieto, a extinção do caminho trilhado -->
-	      <img class="room" src="./src/rooms/about-room.webp"/>
-	      <div>
-		<!-- <input  -->
-		<!--   onclick="window.location.href= './rooms/about.html';" -->
-		<!--   style="min-height: 200px; transform: translate(-190%, 60%);" -->
-		<!--   class="invisible_button" -->
-		<!--   type="button"  -->
-		<!--   value="" -->
-		<!--   /> -->
-		<a href="./rooms/about.html" style="border: 2px dashed white; min-height: 100px; min-width: 100px;"></a>
+	      <img id="about_room" class="room" src="./src/rooms/about-room.webp"/>
+	      
+	      <div class="room_button tooltip" style="height: 200px; top: -38%; left:  62%;">
+		<a class="link" onclick="_play_about_room_animation();">
+		  <div style="height: 100%; width: 100%;"></div>
+		</a>
+		<span class="tooltip-text">About.</span>
 	      </div>
-	      <span class="tooltip-text">About.</span>
 	    </div>
 	    <img class="room" src="./src/rooms/creativity-room.webp"/>
 	  </div>
@@ -67,7 +58,24 @@
     <footer>
       
     </footer>
-    
+    <script type="text/javascript">
+      
+      const _about_room = document.getElementById("about_room");
+      const _about_link = document.getElementById("about_link");
+      var _about_room_anim_once = false;
+      
+      function _play_about_room_animation() {
+	  if (_about_room_anim_once === false) {
+	      _about_room_anim_once = true;
+	      _about_room.src = "./src/rooms/about-animation.gif";
+	      setTimeout(() => {
+		  window.location.href = "./rooms/about.html";
+		  return;
+	      }, (900));
+	  }
+      }
+      
+    </script>
   </body>
   <!-- <script src="./panning_movement.js"></script> -->
 </html>

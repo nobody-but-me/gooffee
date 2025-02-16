@@ -1,6 +1,8 @@
 
 html, body {
-    font-family:            "Courier New", "Courier", "Times New Roman";
+    font-family:            "MathJax_Typewriter" "Courier New", "Courier", "Times New Roman";
+    line-height:            1.5em;
+    letter-spacing:         2px;
     background:             black;
     
     color:                  white;
@@ -71,6 +73,28 @@ house {
     -ms-    user-select:    none;
             user-select:    none;
     
+}
+
+.room_button {
+    position:               relative;
+    left:                   50%;
+    top:                    50%;
+    transform:              translate(-50%, -50%);
+    
+    /* border-radius:          15px; */
+    /* border:                 2px dashed white; */
+    
+    min-height:             100px;
+    min-width:              100px;
+    height:                 100px;
+    width:                  100px;
+}
+
+.room_button .link {
+    min-height:             100%;
+    min-width:              100%;
+    height:                 100%;
+    width:                  100%;
 }
 
 #panning_container {
