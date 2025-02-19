@@ -88,6 +88,9 @@ house {
     min-width:              100px;
     height:                 100px;
     width:                  100px;
+    
+    -webkit-cursor:         pointer;
+    cursor:                 pointer;
 }
 
 .room_button .link {

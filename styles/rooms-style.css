@@ -1,32 +1,46 @@
 
-a:link {
-	color: #5886fc;
-	background-color: transparent;
-	text-decoration: none;
+::-webkit-scrollbar {
+    width: 5px;
 }
-a:visited {
-	color: #FFDB94;
-	background-color: transparent;
-	text-decoration: none;
+::-webkit-scrollbar-track {
+    background: #070707;
 }
-a:hover {
-	color: #395392;
-	background-color: transparent;
-	text-decoration: underline;
+::-webkit-scrollbar-thumb {
+    background: #141414;
 }
-a:active {
-	color: #0D408E;
-	background-color: transparent;
-	text-decoration: underline;
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
+a:link {
+    color: #5886fc;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #FFDB94;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #395392;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: #0D408E;
+    background-color: transparent;
+    text-decoration: underline;
+}
 
 html, body {
     font-family:            "MathJax_Typewriter" "Courier New", "Courier", "Times New Roman";
+    text-align:             justify;
     line-height:            1.5em;
     letter-spacing:         2px;
     background-color:       black;
     color:                  white;
+    hyphens:                auto;
     
     margin:                 0px !important;
     padding:                0px !important;
@@ -59,8 +73,8 @@ body {
     min-height:       50%;
     height:           90%;
     min-width:        100px;
-    width:            800px;
-    max-width:        800px;
+    width:            700px;
+    max-width:        700px;
     
     overflow-x:       hidden;
     overflow-y:       auto;
@@ -90,4 +104,49 @@ body {
 #light {
     max-height: 550px;
     max-width:  550px;
+}
+
+
+ul, #myUL {
+    border: none;
+    border-left: 10px solid rgba(24, 24, 24, 255);
+    list-style-type:     none;
+}
+
+.tree-caret {
+    /* margin-down:         10px; */
+    /* margin-top:          10px; */
+    
+    cursor:              pointer;
+    -webkit-user-select: none;
+    user-select:         none;
+    
+    display:             flex;
+    justify-content:     flex-start;
+    flex-direction:      row;
+    align-items:         center;
+}
+
+.tree-nested {
+    display: none;
+}
+
+.tree-active {
+    display: block;
+}
+
+.tree-image {
+    min-height: 35px;
+    min-width:  35px;
+    height:     35px;
+    width:      35px;
+    
+    /* position:   relative; */
+    /* left:       50%; */
+    /* top:        50%; */
+    /* transform:  translate(-50%, -50%); */
+}
+
+.tree-image-active {
+    content: url("https://asgooffeeasme.neocities.org/src/icons/open-book.webp");
 }
