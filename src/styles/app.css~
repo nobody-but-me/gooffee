@@ -1,0 +1,15 @@
+
+html, body {
+    font-family:            "MathJax_Typewriter", "Courier New", "Courier", "Times New Roman";
+    line-height:            1.5em;
+    letter-spacing:         2px;
+    background-color: black;
+}
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
