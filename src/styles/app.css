@@ -4,10 +4,28 @@
     margin:     0 auto;
     padding:    2rem;
     text-align: left;
+    
+    --rt-color-dark:               rgba(7, 7, 7, 7);
+    --rt-color-success:            #8dc572;
+    --rt-color-error:              #be6464;
+    --rt-color-warning:            #f0ad4e;
+    --rt-color-info:               #337ab7;
+    --rt-opacity:                  0.9;
+    --rt-transition-show-delay:    0.25s;
+    --rt-transition-closing-delay: 0.25s;
 }
 
 #house_floor {
     display:         flex;
     justify-content: center;
     flex-direction:  row;
+}
+
+.room_button {
+    min-height: 350px;
+    min-width:  350px;
+    
+    background-color: transparent;
+    
+    position:  absolute;
 }
