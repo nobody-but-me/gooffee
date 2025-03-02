@@ -22,37 +22,42 @@ function _room({_image}) {
 }
 
 function _redirect_to_room(_room_path) {
-    console.log({_room_path});
     if (_room_path === "void") {
 	console.log("void");
 	return;
     }
+    window.location.href = _room_path;
 }
 
 function House() {
     const _house = [
-	[_computer_room],
-	[_writing_room, _about_room, _drawing_room],
-	[_spiral_room, _button_room1, _log_room],
-	[_diary_room]
+	[[_computer_room, "void"]],
+	[[_writing_room, "void"], [_about_room, "https://asgooffeeasme.neocities.org"], [_drawing_room, "void"]],
+	[[_spiral_room, "void"], [_button_room1, "void"], [_log_room, "void"]],
+	[[_diary_room, "void"]]
     ];
     const _house_room_path = [
-	["void"],
-	["void", "https://asgooffeeasme.neocities.org", "void"],
-	["void", "void", "void"],
-	["void"]
+	"void",
+	"void", "https://asgooffeeasme.neocities.org", "void",
+	"void", "void", "void",
+	"void"
     ];
     
     return (
-	<div>
-	    {_house.map((_i, _j) => (
-		<div key={_j} className="house_floor">
-		    {_i.map((_k, _l) => (
-			<_room key={_l} _image={_k} />
-		    ))}
-		</div>
-	    ))}
-	</div>
+	<>
+	    <div>
+		{_house.map((_i, _j) => (
+		    <div key={_j} className="house_floor">
+			{_i.map((_k, _l) => (
+			    <div key={_l}>
+				<button className="room_button" onClick={() => {_redirect_to_room(_k[1])}}></button>
+				<_room _image={_k[0]} />
+			    </div>
+			))}
+		    </div>
+		))}
+	    </div>
+	</>
     )
 }
 

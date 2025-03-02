@@ -22,12 +22,15 @@
 }
 
 .room_button {
-    min-height: 350px;
-    min-width:  350px;
+    min-height:    350px;
+    min-width:     350px;
+    border-bottom: 2px solid transparent;
     
     background-color: transparent;
-    
-    position:  absolute;
+    position:         absolute;
+}
+.room_button:active {
+    border-color: orange;
 }
 
 @media (max-width: 576px) { /*  PHONE RESOLUTION  */
