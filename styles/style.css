@@ -1,9 +1,43 @@
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #070707;
+}
+::-webkit-scrollbar-thumb {
+    background: #141414;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+a:link {
+    color: #5886fc;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #FFDB94;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #395392;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: #0D408E;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 html, body {
     font-family:            "MathJax_Typewriter", "Courier New", "Courier", "Times New Roman";
     line-height:            1.5em;
     letter-spacing:         2px;
-    background:             black;
+    background:             rgba(25,120,227,1);
     
     color:                  white;
     
@@ -31,13 +65,14 @@ html, body {
 }
 
 house {
-    background-color:       black;
+    /* background-color:       black; */
     
     display:                flex;
     justify-content:        center;
     flex-direction:         column;
     
     overflow-x:             hidden;
+    overflow-y:             hidden;
 }
 
 .house_floor {
@@ -137,4 +172,17 @@ house {
     
     border-radius:          15px;
     outline:                none;
+}
+
+#roof {
+    /* height: auto; */
+    height: 500px;
+    
+    position:  absolute;
+    left:      50%;
+    top:       50%;
+    transform: translate(-50%, -50%);
+    
+    z-index: -5px;
+    
 }

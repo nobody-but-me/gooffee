@@ -15,6 +15,8 @@
     </header>
     
     <main id="main">
+      <img id="roof" src="./src/roof.webp" />
+      <div style="height: 100px;"></div>
       <div id="panning_container">
 	<house id="house">
 	  <div class="house_floor">
@@ -29,24 +31,37 @@
 		<a class="link" onclick="window.location.href = './rooms/writing.html';">
 		  <div style="height: 100%; width: 100%;"></div>
 		</a>
-		<span class="tooltip-text">Writing.</span>
+		<span class="tooltip-text">Writing Room.</span>
 	      </div>
 	    </div>
 	    <div>
 	      <!-- Envelhecer é observar, quieto, a extinção do caminho trilhado -->
 	      <img id="about_room" class="room" src="./src/rooms/about-room.webp"/>
-	      <div class="room_button tooltip" style="height: 200px; top: -38%; left:  62%;">
+	      <div class="room_button tooltip" style="height: 200px; top: -38%; left: 62%;">
 		<a class="link" onclick="_play_about_room_animation();">
 		  <div style="height: 100%; width: 100%;"></div>
 		</a>
-		<span class="tooltip-text">About.</span>
+		<span class="tooltip-text">About Room.</span>
 	      </div>
 	    </div>
 	    <img class="room" src="./src/rooms/creativity-room.webp"/>
 	  </div>
 	  <div class="house_floor">
 	    <img class="room" src="./src/rooms/spiral-stairs.webp" />
-	    <img class="room" src="./src/rooms/button-room-1.webp" />
+	    <div>
+	      <img id="button-room-image" class="room" src="./src/rooms/button-room-1.webp" />
+	      <div class="room_button tooltip" style="min-height: 0px; height: 50px; min-width: 0px; width: 80px; top: -15%; left: 62%;">
+		<a 
+		  class="link" 
+		  onmouseenter="_button_room_enter();" 
+		  onmouseleave="_button_room_leave();"
+		  onclick="_button_room_click();"
+		  >
+		  <div style="height: 100%; width: 100%;"></div>
+		</a>
+		<span class="tooltip-text">Button Room.</span>
+	      </div>
+	    </div>
 	    <img class="room" src="./src/rooms/linguistic-room.webp" />
 	  </div>
 	</house>
@@ -59,6 +74,7 @@
 	    <img class="room" src="./src/rooms/void-room.webp" />
 	  </div>
 	</div>
+	<div style="height: 100px;"></div>
       </div>
     </main>
     
@@ -67,9 +83,12 @@
     </footer>
     <script type="text/javascript">
       
-      const _about_room = document.getElementById("about_room");
-      const _about_link = document.getElementById("about_link");
+      const _about_room         = document.getElementById("about_room");
+      const _about_link         = document.getElementById("about_link");
       var _about_room_anim_once = false;
+      
+      const _button_room = document.getElementById("button-room-image");
+      var _button_anim   = false;
       
       function _play_about_room_animation() {
 	  if (_about_room_anim_once === false) {
@@ -80,6 +99,20 @@
 		  return;
 	      }, (900));
 	  }
+      }
+      
+      function _button_room_enter() {
+	  _button_room.src = "./src/rooms/button-room-2.webp";
+	  return;
+      }
+      function _button_room_leave() {
+	  _button_room.src = "./src/rooms/button-room-1.webp";
+	  return;
+      }
+      function _button_room_click() {
+	  // window.location.href = "./rooms/about.html";
+	  alert("[INFO] Work in Progress");
+	  return;
       }
       
     </script>
