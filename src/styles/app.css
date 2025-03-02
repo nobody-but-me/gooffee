@@ -15,7 +15,7 @@
     --rt-transition-closing-delay: 0.25s;
 }
 
-#house_floor {
+.house_floor {
     display:         flex;
     justify-content: center;
     flex-direction:  row;
@@ -28,4 +28,12 @@
     background-color: transparent;
     
     position:  absolute;
+}
+
+@media (max-width: 576px) { /*  PHONE RESOLUTION  */
+    .house_floor {
+	display:         flex;
+	justify-content: center;
+	flex-direction:  column
+    }
 }
