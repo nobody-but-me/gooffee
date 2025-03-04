@@ -1,0 +1,39 @@
+# -- ALL CREDITS FOR MARCOS VINICIUS DE OLIVEIRA --
+# https://blog.marcusoliveiradev.com.br/tooltip-com-html-e-css/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(5, 5, 5, 255);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    transition: opacity 0.3s, visibility 0.3s;
+    
+    -webkit-pointer-events: none;
+    -moz-   pointer-events: none;
+    -ms-    pointer-events: none;
+            pointer-events: none;
+     
+    -webkit-user-select:    none;
+    -moz-   user-select:    none;
+    -ms-    user-select:    none;
+            user-select:    none;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
