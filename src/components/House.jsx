@@ -1,8 +1,8 @@
 
-import React from 'react'
 import { Link, Route, useNavigate } from 'react-router-dom'
-import AppRoutes from '../routes.jsx'
-import About from './About.jsx'
+import AppRoutes                    from '../routes.jsx'
+import About                        from './About.jsx'
+import React                        from 'react'
 
 import _about_room		from "../assets/rooms/about-room.webp"
 import _about_room_gif		from "../assets/rooms/about-animation.gif"
@@ -16,39 +16,24 @@ import _log_room		from "../assets/rooms/log-room.webp"
 import _button_room1		from "../assets/rooms/button-room-1.webp"
 import _button_room2		from "../assets/rooms/button-room-2.webp"
 
-const _DEFAULT_ROOM_SIZE   = 350;
-const _MAX_ROOMS_PER_FLOOR = 3;
+import '../styles/tooltip.css'
 
+const _DEFAULT_ROOM_SIZE   = 350;
 
 function Room({_image}) {
     return <img src={_image} height={_DEFAULT_ROOM_SIZE} width={_DEFAULT_ROOM_SIZE} />
 }
 
-function _redirect_to_room(_room_path) {
-    if (_room_path === "void") {
-	console.log("void");
-	return;
-    }
-    // return <Link to="/about" />
-    // window.location.href = _room_path;
-    // useNavigate("/about", {replace: true});
-    const _navigate = useNavigate();
-    // const _handle_login = () => {
-    _navigate('/about');
-    // };
-    return;
-}
-
 export default function House() {
+    const _wip = "/work_in_progress";
     const _house = [
-	[[_computer_room, "void"]],
-	[[_writing_room, "void"], [_about_room, "/about"], [_drawing_room, "void"]],
-	[[_spiral_room, "void"], [_button_room1, "void"], [_log_room, "void"]],
-	[[_diary_room, "void"]]
+	[[_computer_room, _wip, "Computer Room."]],
+	[[_writing_room, _wip, "Writing Room."], [_about_room, "/about", "About Room."], [_drawing_room, _wip, "Drawing Room."]],
+	[[_spiral_room, _wip, "Spiral Stairs."], [_button_room1, _wip, "Neighbors."], [_log_room, _wip, "Log Room."]],
+	[[_diary_room, _wip, "Diary Room."]]
     ];
-    
     const _navigate = useNavigate();
-    const _handle_room = (_directory) => {
+    const _change_room = (_directory) => {
 	if (_directory != "void") {
 	    _navigate(_directory);
 	}
@@ -60,8 +45,8 @@ export default function House() {
 		{_house.map((_i, _j) => (
 		    <div key={_j} className="house_floor">
 			{_i.map((_k, _l) => (
-			    <div key={_l}>
-				<button className="room_button" onClick={() => {_handle_room(_k[1])}}></button>
+			    <div key={_l} className="tooltip">
+				<button className="room_button" onClick={() => {_change_room(_k[1])}}><span className="tooltip-text">{_k[2]}</span></button>
 				<Room _image={_k[0]} />
 			    </div>
 			))}
