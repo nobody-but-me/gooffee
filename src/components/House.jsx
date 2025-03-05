@@ -32,16 +32,28 @@ function _redirect_to_room(_room_path) {
     // return <Link to="/about" />
     // window.location.href = _room_path;
     // useNavigate("/about", {replace: true});
-    return [ <Route path='/about' element={About} /> ];
+    const _navigate = useNavigate();
+    // const _handle_login = () => {
+    _navigate('/about');
+    // };
+    return;
 }
 
 export default function House() {
     const _house = [
 	[[_computer_room, "void"]],
-	[[_writing_room, "void"], [_about_room, "https://asgooffeeasme.neocities.org"], [_drawing_room, "void"]],
+	[[_writing_room, "void"], [_about_room, "/about"], [_drawing_room, "void"]],
 	[[_spiral_room, "void"], [_button_room1, "void"], [_log_room, "void"]],
 	[[_diary_room, "void"]]
     ];
+    
+    const _navigate = useNavigate();
+    const _handle_room = (_directory) => {
+	if (_directory != "void") {
+	    _navigate(_directory);
+	}
+    };
+    
     return (
 	<>
 	    <div>
@@ -49,7 +61,7 @@ export default function House() {
 		    <div key={_j} className="house_floor">
 			{_i.map((_k, _l) => (
 			    <div key={_l}>
-				<button className="room_button" onClick={() => {_redirect_to_room(_k[1])}}></button>
+				<button className="room_button" onClick={() => {_handle_room(_k[1])}}></button>
 				<Room _image={_k[0]} />
 			    </div>
 			))}
