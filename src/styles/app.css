@@ -24,19 +24,19 @@
 .room_button {
     min-height:    350px;
     min-width:     350px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     
     background-color: transparent;
     position:         absolute;
 }
 .room_button:active {
-    border-color: orange;
+    border-color: black;
 }
 
-@media (max-width: 576px) { /*  PHONE RESOLUTION  */
+@media (max-width: 576px) { /* PHONE RESOLUTION */
     .house_floor {
 	display:         flex;
 	justify-content: center;
-	flex-direction:  column
+	flex-direction:  column;
     }
 }

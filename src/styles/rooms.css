@@ -1,0 +1,90 @@
+
+#room_container {
+    /* border: 2px solid red; */
+    
+    position: absolute;
+    left: 50%;
+    top:  50%;
+    transform: translate(-50%, -50%);
+    
+    height: 80%;
+    width:  80%;
+    
+    display:         flex;
+    justify-content: center;
+    flex-direction:  row;
+}
+.room_content_image {
+    display:         flex;
+    justify-content: center;
+    flex-direction:  column;
+}
+.room_content {
+    display:         flex;
+    justify-content: start;
+    flex-direction:  column;
+    
+    width: 500px;
+    
+    padding: 15px;
+    padding-right: 40px;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.room_content h1 {
+    text-decoration: underline white;
+}
+.room_content div {
+    margin-bottom: 15px;
+}
+.card {
+    background-color: rgba(7, 7, 7, 255);
+    border-radius: 5px;
+    padding: 15px;
+}
+.card ul {
+    border-left: 2px solid rgba(50, 50, 7, 255);
+}
+.text_justify {
+    text-align: justify;
+}
+.text_left {
+    text-align: left;
+}
+.text_right {
+    text-align: right;
+}
+.italic {
+    text-style: italic;
+}
+
+@media (max-width: 576px) { /* PHONE RESOLUTION */
+    #room_container {
+	display:         flex;
+	justify-content: center;
+	flex-direction:  column;
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+	min-height: 100%;
+	min-width: 100%;
+    }
+    .room_content_image {
+	display:         flex;
+	justify-content: center;
+	flex-direction:  column;
+    }
+    .room_content {
+	min-height: 100%;
+	min-width:  90%;
+	width:  500px;
+	
+	margin-top: 500px;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+    }
+}
