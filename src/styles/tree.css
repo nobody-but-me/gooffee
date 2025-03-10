@@ -1,0 +1,72 @@
+
+ul, #tree-ul {
+    border:          none;
+    border-left:     3px solid rgba(24, 24, 24, 255);
+    list-style-type: none;
+    padding: 0;
+    margin:  0;
+}
+
+#tree-ul p {
+    margin: 1em;
+}
+
+.tree-caret {
+    /* margin-down:         10px; */
+    /* margin-top:          10px; */
+    
+    cursor:              pointer;
+    -webkit-user-select: none;
+    user-select:         none;
+    
+    display:             flex;
+    justify-content:     flex-start;
+    flex-direction:      row;
+    align-items:         center;
+}
+
+.tree-nested {
+    display: none;
+}
+
+.tree-nested p {
+    border:  none;
+    margin:  0;
+    padding: 0;
+}
+
+.tree-active {
+    display: block;
+}
+
+.tree-image-container {
+    display:         flex;
+    justify-content: center;
+    flex-direction:  row;
+    align-items:     center;
+    
+    height: 100%;
+    margin: 10px;
+    margin-right: 25px;
+    
+}
+
+.tree-image {
+    min-height: 45px;
+    min-width:  45px;
+    height:     45px;
+    width:      45px;
+}
+
+.tree-image-active {
+    content: url("https://asgooffeeasme.neocities.org/src/icons/open-book.webp");
+}
+
+@media (max-width: 576px) {
+    ul, #tree-ul {
+	border:          none;
+	list-style-type: none;
+	padding: 0;
+	margin:  0;
+    }
+}

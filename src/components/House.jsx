@@ -29,7 +29,7 @@ export default function House() {
     const _wip = "/work_in_progress";
     const _house = [
 	[[_computer_room, _wip, "Computer Room."]],
-	[[_writing_room, _wip, "Writing Room."], [_about_room, "/about", "About Room."], [_drawing_room, _wip, "Drawing Room."]],
+	[[_writing_room, "/writing", "Writing Room."], [_about_room, "/about", "About Room."], [_drawing_room, _wip, "Drawing Room."]],
 	[[_spiral_room, _wip, "Spiral Stairs."], [_button_room1, _wip, "Neighbors."], [_log_room, _wip, "Log Room."]],
 	[[_diary_room, _wip, "Diary Room."]]
     ];

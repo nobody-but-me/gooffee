@@ -38,7 +38,7 @@ function RoomContent({_title, _text}) {
 		Não sei, e talvez nem queira saber. Certa vez ouvi cientista dizer 
 		que sente-se bem com a própria ignorância sobre certas questões 
 		sobre certas coisas; achei um absurdo: como pode um cientista 
-		satisfazer-se com algo tão pocuo, sem-sal, tempero ou caldo com'a 
+		satisfazer-se com algo tão pouco, sem-sal, tempero ou caldo com'a 
 		ignorância? [...]"
 	    </p>
 	    <div className="text_justify italic card">
