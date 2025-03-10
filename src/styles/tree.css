@@ -62,6 +62,10 @@ ul, #tree-ul {
     content: url("https://asgooffeeasme.neocities.org/src/icons/open-book.webp");
 }
 
+.most-recent {
+    border-left: 10px solid orange;
+}
+
 @media (max-width: 576px) {
     ul, #tree-ul {
 	border:          none;

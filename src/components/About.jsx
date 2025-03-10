@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import _default_room_image from "../assets/about-room-image.webp"
+import BackHouse from "./BackHouse.jsx"
+
 import "../styles/rooms.css"
 import "../styles/app.css"
 
@@ -92,7 +94,7 @@ function RoomContent({_title, _text}) {
 		</ul>
 	    </div>
 	    <p>
-		<Link to="/">[ Back to The Old House ]</Link>
+		<BackHouse />
 	    </p>
 	</div>
     );
