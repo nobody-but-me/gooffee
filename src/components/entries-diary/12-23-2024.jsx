@@ -7,6 +7,8 @@ import "../../styles/tree.css"
 import "../../styles/app.css"
 
 import _file from "../../assets/icons/file.webp"
+import _innocence from "../../assets/diary-images/innocence.jpg"
+import _innocence2 from "../../assets/diary-images/innocence2.jpg"
 
 export default function Entry12_23_2024() {
     const _pretender = "https://www.youtube.com/watch?v=12zAD0y_vT0";
@@ -101,6 +103,10 @@ export default function Entry12_23_2024() {
 			    projects, but it takes a long time to do and I can't do anything when I'm too
 			    focused on "important life stuff".
 			</p>
+		        <div className="tree-image-container">
+			    <img src={_innocence} width='90%' />
+			    <img src={_innocence2} width='90%' />
+			</div>
 		    </>
 		}
 		/>

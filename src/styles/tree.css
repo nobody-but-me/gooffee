@@ -68,6 +68,15 @@ ul, #tree-ul {
     content: url("https://raw.githubusercontent.com/nobody-but-me/gooffee/refs/heads/master/src/assets/icons/open-file.webp");
 }
 
+.tree-image-container {
+    display:         flex;
+    justify-content: center;
+    flex-direction:  row;
+}
+.tree-image-container img {
+    margin-left: 10px
+}
+
 .most-recent-orange {
     border-left: 10px solid orange;
 }

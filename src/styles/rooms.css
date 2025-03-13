@@ -103,7 +103,15 @@
     margin-top:         20px;
 }
 
-@media (max-width: 576px) { /* PHONE RESOLUTION */
+@media (max-width: 1280px) {
+    .room_content_image img {
+	width:  350px;
+	height: 350px;
+    }
+}
+
+/* @media (max-width: 576px) { /\* PHONE RESOLUTION *\/ */
+@media (max-width: 1000px) {
     #room_container {
 	display:         flex;
 	justify-content: center;
