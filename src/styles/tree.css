@@ -58,12 +58,21 @@ ul, #tree-ul {
     width:      45px;
 }
 
-.tree-image-active {
+.book-active {
     content: url("https://asgooffeeasme.neocities.org/src/icons/open-book.webp");
 }
+.folder-active {
+    content: url("https://asgooffeeasme.neocities.org/src/icons/open-folder.webp");
+}
+.file-active {
+    content: url("https://raw.githubusercontent.com/nobody-but-me/gooffee/refs/heads/master/src/assets/icons/open-file.webp");
+}
 
-.most-recent {
+.most-recent-orange {
     border-left: 10px solid orange;
+}
+.most-recent-purple {
+    border-left: 10px solid purple;
 }
 
 @media (max-width: 576px) {

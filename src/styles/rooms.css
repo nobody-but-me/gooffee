@@ -84,12 +84,21 @@
     width:     33%;
 }
 
-.ball {
+.orange_ball {
     height:              5px;
     width:               5px;
     border-radius:      15px;
     border: 5px solid orange;
     background-color: orange;
+    margin-right:       25px;
+    margin-top:         20px;
+}
+.purple_ball {
+    height:              5px;
+    width:               5px;
+    border-radius:      15px;
+    border: 5px solid purple;
+    background-color: purple;
     margin-right:       25px;
     margin-top:         20px;
 }

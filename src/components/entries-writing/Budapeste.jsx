@@ -16,7 +16,7 @@ export default function Budapeste() {
 		_image={_book}
 		_title={
 		    <h3>
-			Uma carta à Budapeste [PT-BR][09/27/2024]
+			[09/27/2024][PT-BR] Uma carta à Budapeste 
 		    </h3>
 		} 
 		_text={

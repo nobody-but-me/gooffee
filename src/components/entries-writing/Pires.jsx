@@ -16,7 +16,7 @@ export default function Pires() {
 		_image={_book}
 		_title={
 		    <h3>
-			Cadê o pires? [EN][PT-BR][09/19/2024]
+			[09/19/2024][EN, PT-BR] Cadê o pires? 
 		    </h3>
 		} 
 		_text={

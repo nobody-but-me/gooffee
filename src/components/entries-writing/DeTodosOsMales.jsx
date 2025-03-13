@@ -16,7 +16,7 @@ export default function DeTodosOsMales() {
 		_image={_book}
 		_title={
 		    <h3>
-			De Todos os Males do Mundo, o Melhor que Poderia Acontecer [EN][PT-BR][10/06/2024]
+			[10/06/2024][EN, PT-BR] De Todos os Males do Mundo, o Melhor que Poderia Acontecer 
 		    </h3>
 		} 
 		_text={
