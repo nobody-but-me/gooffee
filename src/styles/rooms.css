@@ -103,6 +103,38 @@
     margin-top:         20px;
 }
 
+.buttons {
+    display:         flex;
+    justify-content: center;
+    flex-direction:  row;
+    
+    height:          100%;
+    width:           100%;
+    
+    border: 2px solid white;
+}
+
+.website-button {
+    margin: 2px;
+    transition: 0.3s, visibility 0.3s;
+}
+.website-text-button {
+    margin: 2px;
+    margin-left: 18px;
+    margin-right: 18px;
+    transition: 0.3s, visibility 0.3s;
+    width: 80px;
+}
+
+.website-button {
+    -webkit-transform:  translate(0px, 0px);
+    -webkit-transition: 0.3s, visibility 0.3s;
+}
+
+.website-button:hover {
+    -webkit-transform: translate(0px, -5px);
+}
+
 @media (max-width: 1280px) {
     .room_content_image img {
 	width:  350px;

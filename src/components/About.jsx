@@ -93,9 +93,7 @@ function RoomContent({_title, _text}) {
 		    <ListLink _text="Miranda's personal WebSite" _path="https://mirandaisasleep.neocities.org" _point="." />
 		</ul>
 	    </div>
-	    <p>
-		<BackHouse />
-	    </p>
+	    <BackHouse />
 	</div>
     );
 }
