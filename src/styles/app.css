@@ -24,8 +24,8 @@
 }
 
 .room_button {
-    min-height:    350px;
-    min-width:     350px;
+    min-height:    250px;
+    min-width:     250px;
     border-bottom: 3px solid transparent;
     
     background-color: transparent;

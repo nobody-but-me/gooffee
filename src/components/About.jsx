@@ -8,8 +8,8 @@ import BackHouse from "./BackHouse.jsx"
 import "../styles/rooms.css"
 import "../styles/app.css"
 
-const _DEFAULT_IMAGE_SIZE = 500
 
+const _DEFAULT_IMAGE_SIZE = 400
 
 function ListLink({_text, _path, _point}) {
     return <li><a target="blank" href={_path}>{_text}</a>{_point}</li>;

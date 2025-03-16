@@ -15,8 +15,8 @@ import Budapeste	from "./entries-writing/Budapeste.jsx"
 import Pires		from "./entries-writing/Pires.jsx"
 import BackHouse	from "./BackHouse.jsx"
 
-const _DEFAULT_IMAGE_SIZE = 500
 
+const _DEFAULT_IMAGE_SIZE = 400
 
 function RoomImage({_room_image}) {
     return <img src={_room_image} height={_DEFAULT_IMAGE_SIZE} width={_DEFAULT_IMAGE_SIZE} />;

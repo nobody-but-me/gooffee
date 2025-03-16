@@ -28,8 +28,8 @@ import _linux             from "../assets/buttons/linux.gif"
 import _slackware         from "../assets/buttons/slackware.gif"
 import _keyboard          from "../assets/buttons/keyboard.png"
 
-const _DEFAULT_IMAGE_SIZE = 500
 
+const _DEFAULT_IMAGE_SIZE = 400
 
 function ListLink({_text, _path, _point}) {
     return <li><a target="blank" href={_path}>{_text}</a>{_point}</li>;

@@ -59,13 +59,13 @@ ul, #tree-ul {
 }
 
 .book-active {
-    content: url("https://asgooffeeasme.neocities.org/src/icons/open-book.webp");
+    content: url("https://asgooffeeasme.neocities.org/assets/open-book.webp");
 }
 .folder-active {
-    content: url("https://asgooffeeasme.neocities.org/src/icons/open-folder.webp");
+    content: url("https://asgooffeeasme.neocities.org/assets/open-folder.webp");
 }
 .file-active {
-    content: url("https://raw.githubusercontent.com/nobody-but-me/gooffee/refs/heads/master/src/assets/icons/open-file.webp");
+    content: url("https://asgooffeeasme.neocities.org/assets/open-file.webp");
 }
 
 .tree-image-container {

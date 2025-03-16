@@ -19,7 +19,7 @@ import _button_room2		from "../assets/rooms/button-room-2.webp"
 import '../styles/tooltip.css'
 import '../styles/app.css'
 
-const _DEFAULT_ROOM_SIZE = 350;
+const _DEFAULT_ROOM_SIZE = 250;
 
 function Room({_image}) {
     return <img src={_image} height={_DEFAULT_ROOM_SIZE} width={_DEFAULT_ROOM_SIZE} />
