@@ -21,8 +21,8 @@ import '../styles/app.css'
 
 const _DEFAULT_ROOM_SIZE = 250;
 
-function Room({_image}) {
-    return <img src={_image} height={_DEFAULT_ROOM_SIZE} width={_DEFAULT_ROOM_SIZE} />
+function Room({_image, _id}) {
+    return <img id={_id} src={_image} height={_DEFAULT_ROOM_SIZE} width={_DEFAULT_ROOM_SIZE} />
 }
 
 export default function House() {
@@ -36,10 +36,39 @@ export default function House() {
     const _navigate = useNavigate();
     const _change_room = (_directory) => {
 	if (_directory != "void") {
-	    _navigate(_directory);
+	    if (_directory === "/about") {
+		const _about_room = document.getElementById("/about");
+		_about_room.src = _about_room_gif;
+		setTimeout(() => {
+		    _navigate(_directory);
+		}, (1200));
+	    }
+	    // else if (_directory === "/buttons") {
+	    // 	const _about_room = document.getElementById("/buttons");
+	    // 	_about_room.src = _button_room2;
+	    // 	setTimeout(() => {
+	    // 	    _navigate(_directory);
+	    // 	}, (200));
+	    // }
+	    else {
+		_navigate(_directory);
+	    }
+	}
+    };
+    const _on_room_mouse_enter = (_directory) => {
+	if (_directory === "/buttons") {
+	    const _buttons_room = document.getElementById("/buttons");
+	    _buttons_room.src = _button_room2;
+	}
+    };
+    const _on_room_mouse_leave = (_directory) => {
+	if (_directory === "/buttons") {
+	    const _buttons_room = document.getElementById("/buttons");
+	    _buttons_room.src = _button_room1;
 	}
     };
     
+    // the follow is a monstrosity
     return (
 	<>
 	    <div>
@@ -47,8 +76,8 @@ export default function House() {
 		    <div key={_j} className="house_floor">
 			{_i.map((_k, _l) => (
 			    <div key={_l} className="tooltip">
-				<button className="room_button" onClick={() => {_change_room(_k[1])}}><span className="tooltip-text">{_k[2]}</span></button>
-				<Room _image={_k[0]} />
+				<button className="room_button" onClick={() => {_change_room(_k[1])}} onMouseEnter={() => {_on_room_mouse_enter(_k[1])}} onMouseLeave={() => {_on_room_mouse_leave(_k[1])}}><span className="tooltip-text">{_k[2]}</span></button>
+				<Room _id={_k[1]} _image={_k[0]} />
 			    </div>
 			))}
 		    </div>
