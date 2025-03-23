@@ -100,13 +100,19 @@ function RoomContent({_title, _text}) {
 		    <img src={_tevito} className="website-button"/>
 		</Link>
 		<p>
-		    And here's my website button. If you did link me, do not hesitate to tell me.
+		    Here's my website button. If you did link me, do not hesitate to tell me.
 		</p>
 		<Link target="_blank" to={_me}>
 		    <img src={_me} className="website-button" />
 		</Link>
 		<p>
-		    -- --
+		    And for those interested in sending me messages: 
+		</p>
+		<Link target="_blank" to={"https://gooffee.atabook.org/"}>
+		    my WebSite's guestbook
+		</Link>;
+		<p>
+		    -- // --
 		</p>
 		<Link target="_blank" to={_linux}>
 		    <img src={_linux}     className="website-button" />
