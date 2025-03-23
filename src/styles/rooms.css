@@ -119,11 +119,10 @@
     transition: 0.3s, visibility 0.3s;
 }
 .website-text-button {
-    margin: 2px;
-    margin-left: 18px;
-    margin-right: 18px;
+    text-align: justify;
+    
     transition: 0.3s, visibility 0.3s;
-    width: 80px;
+    word-break: break-all;
 }
 
 .website-button {

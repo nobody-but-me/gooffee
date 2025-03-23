@@ -22,6 +22,7 @@ import _jutipia           from "../assets/buttons/jutipia.png"
 import _lazybone          from "../assets/buttons/lazybone.png"
 import _rike              from "../assets/buttons/rike.gif"
 import _vinizone          from "../assets/buttons/vinizone.png"
+import _tevito          from "../assets/buttons/tevito.gif"
 import _me                from "../assets/buttons/gooffee.gif"
 
 import _linux             from "../assets/buttons/linux.gif"
@@ -77,7 +78,7 @@ function RoomContent({_title, _text}) {
 		<Link target="_blank" to="https://abcthehuman.neocities.org/">
 		    <img src={_abcthehuman} className="website-button"/>
 		</Link>
-		<Link target="_blank" to="https://dorival.neocities.org/" className="website-text-button">
+		<Link target="_blank" to="https://dorival.neocities.org/" className="website-text-button" style={{padding:'21px', paddingBottom:'0px'}}>
 		    I-Land
 		</Link>
 		<Link target="_blank" to="https://vinizinho.net/">
@@ -92,8 +93,11 @@ function RoomContent({_title, _text}) {
 		<Link target="_blank" to="https://cyberstheb.neocities.org/">
 		    <img src={_cyberstheb} className="website-button"/>
 		</Link>
-		<Link target="_blank" to="https://magilovescats.neocities.org/" className="website-text-button">
+		<Link target="_blank" to="https://magilovescats.neocities.org/" className="website-text-button" style={{padding:'21px', paddingBottom:'0px'}}>
 		    Magi's
+		</Link>
+		<Link target="_blank" to="https://tevito.neocities.org/" className="website-button">
+		    <img src={_tevito} className="website-button"/>
 		</Link>
 		<p>
 		    And here's my website button. If you did link me, do not hesitate to tell me.
@@ -102,7 +106,7 @@ function RoomContent({_title, _text}) {
 		    <img src={_me} className="website-button" />
 		</Link>
 		<p>
-		    -- @ --
+		    -- --
 		</p>
 		<Link target="_blank" to={_linux}>
 		    <img src={_linux}     className="website-button" />
