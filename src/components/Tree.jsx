@@ -4,19 +4,42 @@ import React from 'react'
 import '../styles/tree.css'
 
 function _span_clicked(_image) {
-    const _toggler = document.getElementsByClassName("tree-caret");
-    for (let i = 0; i < _toggler.length; i++) {
-	_toggler[i].addEventListener("click", function() {
+    const _togglers = document.getElementsByClassName("tree-caret");
+    // for (let i = 0; i < _toggler.length; i++) {
+    // 	_toggler[i].addEventListener("click", function() {
+    // 	    this.parentElement.querySelector(".tree-nested").classList.toggle("tree-active");
+    // 	    if (_image === "/src/assets/icons/book.webp") {
+    // 		this.querySelector(".tree-image").classList.toggle("book-active");
+    // 	    }
+    // 	    else if (_image === "/src/assets/icons/file.webp") {
+    // 		this.querySelector(".tree-image").classList.toggle("file-active");
+    // 	    }
+    // 	    else if (_image === "/src/assets/icons/folder.webp") {
+    // 		this.querySelector(".tree-image").classList.toggle("folder-active");
+    // 	    }
+    // 	});
+    // }
+    const _toggler_image_changer = (_element) => {
+	const _image_element = _element.querySelector(".tree-image");
+	switch(_image) {
+	    case "/src/assets/icons/book.webp":
+	        _image_element.classList.toggle("book-active");
+	        break;
+	    case "/src/assets/icons/file.webp":
+	        _image_element.classList.toggle("file-active");
+	        break;
+	    case "src/assets/icons/folder.webp":
+	        _image_element.classList.toggle("folder-active");
+	        break;
+	    default:
+	        console.log("[FAILED] Image path could not be recognized :: ", _image);
+	        break;
+	}
+    };
+    for (let i = 0; i < _togglers.length; i++) {
+	_togglers[i].addEventListener("click", function() {
 	    this.parentElement.querySelector(".tree-nested").classList.toggle("tree-active");
-	    if (_image === "/src/assets/icons/book.webp") {
-		this.querySelector(".tree-image").classList.toggle("book-active");
-	    }
-	    else if (_image === "/src/assets/icons/file.webp") {
-		this.querySelector(".tree-image").classList.toggle("file-active");
-	    }
-	    else if (_image === "/src/assets/icons/folder.webp") {
-		this.querySelector(".tree-image").classList.toggle("folder-active");
-	    }
+	    _toggler_image_changer(this);
 	});
     }
 }
