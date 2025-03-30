@@ -11,7 +11,7 @@ import "../styles/app.css"
 // Entries
 import Entry10_21_2024 from "./entries-diary/10-21-2024.jsx"
 import Entry12_23_2024 from "./entries-diary/12-23-2024.jsx"
-import BackHouse from "./BackHouse.jsx"
+import BackHouse       from "./BackHouse.jsx"
 
 
 const _DEFAULT_IMAGE_SIZE = 400;

@@ -43,13 +43,6 @@ export default function House() {
 		    _navigate(_directory);
 		}, (1200));
 	    }
-	    // else if (_directory === "/buttons") {
-	    // 	const _about_room = document.getElementById("/buttons");
-	    // 	_about_room.src = _button_room2;
-	    // 	setTimeout(() => {
-	    // 	    _navigate(_directory);
-	    // 	}, (200));
-	    // }
 	    else {
 		_navigate(_directory);
 	    }
