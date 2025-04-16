@@ -9,7 +9,7 @@
     
     border-radius: 15px;
     height:        100%;
-    width:         80%;
+    width:         90%;
     
     display:         flex;
     justify-content: center;
@@ -28,11 +28,10 @@
     flex-direction:  column;
     
     height: 100%;
-    width:  800px;
+    width:  100%;
     
     padding:        15px;
     padding-right:  40px;
-    
     overflow-y: auto;
     overflow-x: hidden;
 }

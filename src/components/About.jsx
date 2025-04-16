@@ -72,7 +72,7 @@ function RoomContent({_title, _text}) {
 		</ul>
 	    </div>
 	    <div className="text_justify card">
-		Random facts about me listed by a special friend:
+		Random facts about me listed by a special friend(M.):
 		<ul>
 		    <li>daniel wears ladybug slippers;</li>
 		    <li>daniel loves crocodiles;</li>
@@ -102,6 +102,7 @@ export default function About() {
     return (
 	<div id="room_container">
 	    <RoomContent />
+	    <div style={{width:'50px'}}></div>
 	    <div className="room_content_image">
 		<RoomImage _room_image={_default_room_image} />
 	    </div>
