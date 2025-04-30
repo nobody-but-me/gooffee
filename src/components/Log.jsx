@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import _default_room_image from "../assets/about-room-image.webp"
+import _default_room_image from "../assets/log-room-image.webp"
 import BackHouse from "./BackHouse.jsx"
 
 import "../styles/rooms.css"
@@ -24,7 +24,7 @@ function RoomContent({_title, _text}) {
     return (
 		<div className="room_content">
 			<h1 className="text_right">
-				Misc Logs About Everything, really.
+				Miscellaneous Logs About Everything, really.
 			</h1>
 			<p className="text_justify card">
 				A bunch of miscellaneous logs of random things I would like to remember. The
@@ -44,11 +44,11 @@ function RoomContent({_title, _text}) {
 				</ul>
 			</div>
 			<p className="text_justify card">
-				And here's a little TODO list to reminds me what I have to do. That's not day specific -- although I wanted it to be.
+				And here's a little TODO list. That's not day specific -- although I wanted it to be.
 			</p>
 			<div className="text_justify card">
 				<ul>
-					<li><color className='log'>[ ]</color>: Read about 'new journalism' for the university work;</li>
+					<li><color className='log'>[ ]</color>: Read about 'new journalism' for the university work; Separate the main and most important points of it.</li>
 					<li><color className='log'>[ ]</color>: Finish to read The Bell Jar;</li>
 					<li><color className='most-recent-log'>[x]</color>: Add Log page in your website;</li>
 					<li><color className='log'>[ ]</color>: Write a post about the city builder game I am developing;</li>
