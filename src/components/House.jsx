@@ -4,15 +4,15 @@ import AppRoutes                    from '../routes.jsx'
 import About                        from './About.jsx'
 import React                        from 'react'
 
-import _about_room		from "../assets/rooms/about-room.webp"
+import _about_room		    from "../assets/rooms/about-room.webp"
 import _about_room_gif		from "../assets/rooms/about-animation.gif"
 import _writing_room		from "../assets/rooms/writing-room.webp"
-import _diary_room		from "../assets/rooms/diary-room.webp"
+import _diary_room		    from "../assets/rooms/diary-room.webp"
 import _computer_room		from "../assets/rooms/computer-room.webp"
 import _drawing_room		from "../assets/rooms/drawing-room.webp"
-import _void_room		from "../assets/rooms/void-room.webp"
-import _spiral_room	        from "../assets/rooms/spiral-stairs.webp"
-import _log_room		from "../assets/rooms/log-room.webp"
+import _void_room		    from "../assets/rooms/void-room.webp"
+import _spiral_room	    from "../assets/rooms/spiral-stairs.webp"
+import _log_room		    from "../assets/rooms/log-room.webp"
 import _button_room1		from "../assets/rooms/button-room-1.webp"
 import _button_room2		from "../assets/rooms/button-room-2.webp"
 
@@ -30,7 +30,7 @@ export default function House() {
     const _house = [
 	[[_computer_room, _wip, "Computer Room."]],
 	[[_writing_room, "/writing", "Writing Room."], [_about_room, "/about", "About Room."], [_drawing_room, _wip, "Drawing Room."]],
-	[[_spiral_room, _wip, "Spiral Stairs."], [_button_room1, "/buttons", "Neighbors."], [_log_room, _wip, "Log Room."]],
+	[[_spiral_room, _wip, "Spiral Stairs."], [_button_room1, "/buttons", "Neighbors."], [_log_room, "/log", "Log Room."]],
 	[[_diary_room, "/diary", "Diary Room."]]
     ];
     const _navigate = useNavigate();
