@@ -23,40 +23,40 @@ function RoomImage({_room_image}) {
 
 function RoomContent({_title, _text}) {
     return (
-	<div className="room_content">
-	    <h1 className="text_right">
-		Diary/Blog.
-	    </h1>
-	    <p className="text_left">
-		Here you are going to find all of my blog posts.
-	    </p>
-	    <div className="summary">
-		<div className="purple_ball"></div>
-		<p>
-		    Most recent 
-		</p>
-	    </div>
-	    <div className="text_justify card most-recent-purple">
-		<Entry04_16_2024 />
-	    </div>
-	    <div className="text_justify card">
-		<Entry12_23_2024 />
-	    </div>
-	    <div className="text_justify card">
-		<Entry10_21_2024 />
-	    </div>
-	    <BackHouse />
-	</div>
+		<div className="room_content">
+			<h1 className="text_right">
+				Diary/Blog.
+			</h1>
+			<p className="text_left">
+				Here you are going to find all of my blog posts.
+			</p>
+			<div className="summary">
+				<div className="purple_ball"></div>
+				<p>
+					Most recent
+				</p>
+			</div>
+			<div className="text_justify card most-recent-purple">
+				<Entry04_16_2024 />
+			</div>
+			<div className="text_justify card">
+				<Entry12_23_2024 />
+			</div>
+			<div className="text_justify card">
+				<Entry10_21_2024 />
+			</div>
+			<BackHouse />
+		</div>
     );
 }
 
 export default function Writing() {
     return (
-	<div id="room_container">
-	    <RoomContent />
-	    <div className="room_content_image">
-		<RoomImage _room_image={_default_room_image} />
-	    </div>
-	</div>
+		<div id="room_container">
+			<RoomContent />
+			<div className="room_content_image">
+				<RoomImage _room_image={_default_room_image} />
+			</div>
+		</div>
     )
 }

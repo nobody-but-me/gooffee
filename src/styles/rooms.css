@@ -69,7 +69,11 @@
 .summary {
     display:         flex;
     justify-content: start;
+    align-items:     flex-end;
     flex-direction:  row;
+}
+.summary p {
+    height: 20px;
 }
 
 .back_link {
@@ -131,6 +135,13 @@
 
 .website-button:hover {
     -webkit-transform: translate(0px, -5px);
+}
+
+.most-recent-log {
+    color: orange;
+}
+.log {
+    color: purple;
 }
 
 @media (max-width: 1280px) {
