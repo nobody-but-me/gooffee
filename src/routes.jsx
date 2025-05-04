@@ -4,6 +4,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import WorkInProgress from './components/WorkInProgress.jsx'
+import Computer       from './components/Computer.jsx'
 import Writing        from './components/Writing.jsx'
 import Buttons        from './components/Buttons.jsx'
 import Diary          from './components/Diary.jsx'
@@ -24,6 +25,7 @@ export default function AppRoutes() {
 						<Route path='/diary' element={<Diary />} />
 						<Route path='/buttons' element={<Buttons />} />
 						<Route path='/work_in_progress' element={<WorkInProgress />} />
+						<Route path='/computer' element={<Computer />} />
 						<Route path='/log' element={<Log />} />
 					</Routes>
 				</BrowserRouter>

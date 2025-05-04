@@ -9,11 +9,8 @@ import "../styles/tree.css"
 import "../styles/app.css"
 
 // Entries
-import Entry10_21_2024 from "./entries-diary/10-21-2024.jsx"
-import Entry12_23_2024 from "./entries-diary/12-23-2024.jsx"
-import Entry04_16_2024 from "./entries-diary/04-16-2025.jsx"
+import KDE from "./entries-computer/KDE.jsx"
 import BackHouse       from "./BackHouse.jsx"
-
 
 const _DEFAULT_IMAGE_SIZE = 400;
 
@@ -25,32 +22,29 @@ function RoomContent({_title, _text}) {
     return (
 		<div className="room_content">
 			<h1 className="text_right">
-				Diary/Blog.
+				Computer related topics.
 			</h1>
 			<p className="text_left">
-				Here you are going to find all of my blog posts.
+				Here you are going to find some posts about computer, programming, linux, and stuff like that.
 			</p>
 			<div className="summary">
-				<div className="ball purple_ball"></div>
+				<div className="ball green_ball"></div>
 				<p>
 					Most recent
 				</p>
 			</div>
 			<div className="text_justify card most-recent-purple">
-				<Entry04_16_2024 />
+				<KDE />
 			</div>
 			<div className="text_justify card">
-				<Entry12_23_2024 />
-			</div>
-			<div className="text_justify card">
-				<Entry10_21_2024 />
+			    test
 			</div>
 			<BackHouse />
 		</div>
     );
 }
 
-export default function Writing() {
+export default function Computer() {
     return (
 		<div id="room_container">
 			<RoomContent />

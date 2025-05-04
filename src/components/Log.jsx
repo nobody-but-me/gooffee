@@ -9,6 +9,8 @@ import "../styles/rooms.css"
 import "../styles/tree.css"
 import "../styles/app.css"
 
+import Entry05_04_2025 from "./entries-logs/05-04-2025.jsx";
+
 
 const _DEFAULT_IMAGE_SIZE = 400
 
@@ -28,11 +30,11 @@ function RoomContent({_title, _text}) {
 			</h1>
 			<p className="text_justify card">
 				A bunch of miscellaneous logs of random things I would like to remember. The
-				goal is one day look at it and not feel like a strager looking into someone
+				goal is one day look at it and not feel like a stranger looking into someone
 				else's life without permission.
 			</p>
 			<div className="summary">
-				<div className="orange_ball"></div>
+				<div className="ball orange_ball"></div>
 				<p>
 					Most recent
 				</p>
@@ -44,7 +46,7 @@ function RoomContent({_title, _text}) {
 				</ul>
 			</div>
 			<p className="text_justify card">
-				And here's a little TODO list. That's not day specific -- although I wanted it to be.
+				And here's a TODO list. That's not day specific -- although I wanted it to be.
 			</p>
 			<div className="text_justify card">
 				<ul>
@@ -55,6 +57,12 @@ function RoomContent({_title, _text}) {
 					<li><color className='log'>[ ]</color>: Write a post here why I switched to KDE;</li>
 					<li><color className='log'>[ ]</color>: Have a haircut;</li>
 				</ul>
+			</div>
+			<p className="text_justify card">
+				And here's some things from my journalism university. I plan to make a room just for them. I feel like I'd like to remember all of it.
+			</p>
+		        <div className="text_justify card most-recent-purple">
+			    <Entry05_04_2025 />
 			</div>
 			<BackHouse />
 		</div>

@@ -87,23 +87,24 @@
     width:     33%;
 }
 
-.orange_ball {
+.ball {
     height:              5px;
     width:               5px;
     border-radius:      15px;
-    border: 5px solid orange;
-    background-color: orange;
     margin-right:       25px;
     margin-top:         20px;
 }
+.orange_ball {
+    border: 5px solid orange;
+    background-color: orange;
+}
 .purple_ball {
-    height:              5px;
-    width:               5px;
-    border-radius:      15px;
     border: 5px solid purple;
     background-color: purple;
-    margin-right:       25px;
-    margin-top:         20px;
+}
+.green_ball {
+    border: 5px solid green;
+    background-color: green;
 }
 
 .buttons {
@@ -143,6 +144,9 @@
 .log {
     color: purple;
 }
+
+
+
 
 @media (max-width: 1280px) {
     .room_content_image img {

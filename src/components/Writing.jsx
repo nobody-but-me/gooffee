@@ -32,7 +32,7 @@ function RoomContent({_title, _text}) {
 		My writing projects.
 	    </p>
 	    <div className="summary">
-		<div className="orange_ball"></div>
+		<div className="ball orange_ball"></div>
 		<p>
 		    Most recent 
 		</p>
