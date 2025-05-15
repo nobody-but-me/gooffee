@@ -11,7 +11,8 @@ import "../styles/app.css"
 // Entries
 import Entry10_21_2024 from "./entries-diary/10-21-2024.jsx"
 import Entry12_23_2024 from "./entries-diary/12-23-2024.jsx"
-import Entry04_16_2024 from "./entries-diary/04-16-2025.jsx"
+import Entry04_16_2025 from "./entries-diary/04-16-2025.jsx"
+import Entry05_15_2025 from "./entries-diary/05-15-2025.jsx"
 import BackHouse       from "./BackHouse.jsx"
 
 
@@ -37,7 +38,10 @@ function RoomContent({_title, _text}) {
 				</p>
 			</div>
 			<div className="text_justify card most-recent-purple">
-				<Entry04_16_2024 />
+				<Entry05_15_2025 />
+			</div>
+			<div className="text_justify card">
+				<Entry04_16_2025 />
 			</div>
 			<div className="text_justify card">
 				<Entry12_23_2024 />
