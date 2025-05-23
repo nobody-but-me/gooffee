@@ -197,6 +197,14 @@
 }
 
 
+.row-center {
+    display: flex;
+    justify-content: center;
+    justify-direction: row;
+    align-items: center;
+}
+
+
 @media (max-width: 1280px) {
     .room_content_image img {
 	width:  350px;

@@ -35,7 +35,7 @@ function RoomContent({_title, _text}) {
 					<li>
 					    GOLF GAME
 					    <ul>
-						<li><a onClick={() => {_navigate('/Golf22-05-2025');}}>TEST</a></li>
+						<li><Link to='/Golf23-05-2025'>BLOG</Link></li>
 					    </ul>
 					</li>
 				</ul>
