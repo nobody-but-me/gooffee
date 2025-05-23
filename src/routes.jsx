@@ -3,6 +3,7 @@ import React from 'react'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import Golf22_05_2025     from './components/entries-computer/golf-game/22-05-2025.jsx'
 import WorkInProgress from './components/WorkInProgress.jsx'
 import Computer       from './components/Computer.jsx'
 import Writing        from './components/Writing.jsx'
@@ -27,6 +28,8 @@ export default function AppRoutes() {
 						<Route path='/work_in_progress' element={<WorkInProgress />} />
 						<Route path='/computer' element={<Computer />} />
 						<Route path='/log' element={<Log />} />
+					    
+						<Route path='/Golf22-05-2025' element={<Golf22_05_2025 />} />
 					</Routes>
 				</BrowserRouter>
 			</div>
