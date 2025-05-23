@@ -172,6 +172,11 @@
     padding:          15px;
     
     min-height: 150px;
+    
+    display:           flex;
+    justify-content:   space-around;
+    justify-direction: row;
+    align-items:       center;
 }
 .computer_posts_container {
     min-width:  100%;
