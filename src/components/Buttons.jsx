@@ -24,6 +24,9 @@ import _rike              from "../assets/buttons/rike.gif"
 import _vinizone          from "../assets/buttons/vinizone.png"
 import _tevito          from "../assets/buttons/tevito.gif"
 import _me                from "../assets/buttons/gooffee.gif"
+import _wallaceonline     from "../assets/buttons/wallaceonline.png"
+import _nathansplace      from "../assets/buttons/nathansplace.png"
+import _octagon           from "../assets/buttons/octagon.png"
 
 import _linux             from "../assets/buttons/linux.gif"
 import _slackware         from "../assets/buttons/slackware.gif"
@@ -98,6 +101,15 @@ function RoomContent({_title, _text}) {
 		</Link>
 		<Link target="_blank" to="https://tevito.neocities.org/" className="website-button">
 		    <img src={_tevito} className="website-button"/>
+		</Link>
+		<Link target="_blank" to="https://octagon.neocities.org/">
+		    <img src={_octagon} className="website-button" width="88px" height="32px"/>
+		</Link>
+		<Link target="_blank" to="https://nathanntan.neocities.org/">
+		    <img src={_nathansplace} className="website-button"/>
+		</Link>
+		<Link target="_blank" to="https://wallace-online.neocities.org/">
+		    <img src={_wallaceonline} className="website-button"/>
 		</Link>
 		<p>
 		    Here's my website button. If you did link me, do not hesitate to tell me.

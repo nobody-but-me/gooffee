@@ -7,8 +7,6 @@ import "../../../styles/rooms.css"
 import "../../../styles/tree.css"
 import "../../../styles/app.css"
 
-import video from "../../../assets/computer-images/golf/golf-video-1.mp4"
-
 function BackComputerRoom() {
     return (
 	<>
@@ -45,10 +43,9 @@ export default function Golf06_03_2025() {
 		</p>
 		<p className="text_justify">
 		    Despite saying it, I'll probably not gave up on it simply because I am too stubborn for that.
-		    I've written before. 
 		</p>
 		<div className="row-center">
-		    <video controls id="example_video_1" class="video-js vjs-default-skin" width="640" height="264" src="" type='video/mp4' style={{width: '100%'}}/>
+		    <video controls id="example_video_1" class="video-js vjs-default-skin" width="640" height="264" src="https://github.com/nobody-but-me/gooffee/raw/refs/heads/master/src/assets/computer-images/golf/golf-video-1.mp4" type='video/mp4' style={{width: '100%'}}/>
 		</div>
 		<p className="text_center">
 		    An video showing how the animations look like in game.
