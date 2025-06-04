@@ -62,7 +62,7 @@ export default function Golf23_05_2025() {
 		    <img src={Image23_05_2025} width='90%' rel="23/05/2025" />
 		</div>
 		<p className="text_center">
-		    An exmaple how the game looks like right now.
+		    An example how the game looks like right now.
 		</p>
 		<p className="text_justify">
 		    The next step now is add animations to the sprite of the little golf guy. 

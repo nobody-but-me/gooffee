@@ -28,14 +28,20 @@ function RoomContent({_title, _text}) {
 				"Computering" projects.
 			</h1>
 			<p className="text_justify card">
-				I love to code, so you'll see this page being update very often.
+				I like to code, so this page is going to be updated very often. The most recent posts will have a * on the title.
 			</p>
 			<div className="text_justify card">
 				<ul>
 					<li>
 					    GOLF GAME
 					    <ul>
-						<li><Link to='/Golf23-05-2025'>BLOG</Link></li>
+						<li>
+						    BLOG
+						    <ul>
+							<li><Link to='/Golf03-06-2025'>Post 06/03/2025</Link> *</li>
+							<li><Link to='/Golf23-05-2025'>Post 05/23/2025</Link></li>
+						    </ul>
+						</li>
 					    </ul>
 					</li>
 				</ul>
