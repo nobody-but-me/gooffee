@@ -84,13 +84,15 @@ function RoomContent({_title, _text}) {
 	    <div className="text_justify card">
 		Misc:
 		<ul>
-		    <ListLink _text="Tsoding Faq" _path="https://github.com/tsoding/faq" _point=";" />
+		    <ListLink _text="Better video about the construction of the pyramids" _path="https://youtu.be/EF3w2Dldg1o?si=aSjqwOodBWYyWTbS" _point=";" />
+		    <ListLink _text="ToaruOS running on a real hardware" _path="https://youtu.be/1hz8fYghklw?si=SZ_TtaKAR-YKFIS2" _point=";" />
+		    <ListLink _text="Miranda's personal WebSite" _path="https://mirandaisasleep.neocities.org" _point=";" />
 		    <ListLink _text="Voylin's 1st April fool" _path="https://www.youtube.com/watch?v=CJEyuMoV9o0" _point=";" />
 		    <ListLink _text="Why Miranda is straight" _path="https://mirandaisstraight.neocities.org" _point=";" />
 		    <ListLink _text="Copacabana song" _path="https://youtu.be/uLo0i-vCt_Y?si=V4_BpVKLfiy4qS1D" _point=";" />
-		    <ListLink _text="ToaruOS running on a real hardware" _path="https://youtu.be/1hz8fYghklw?si=SZ_TtaKAR-YKFIS2" _point=";" />
-		    <ListLink _text="Blue" _path="https://youtu.be/3QYpsCfs-j8?si=4iia2LXE1YNHJ7B5" _point=";" />
-		    <ListLink _text="Miranda's personal WebSite" _path="https://mirandaisasleep.neocities.org" _point="." />
+		    <ListLink _text="Russian Blue" _path="https://youtu.be/2LiBizgWqMM?si=KeotcyWYyQDEK5TI" _point=";" />
+		    <ListLink _text="Tsoding Faq" _path="https://github.com/tsoding/faq" _point=";" />
+		    <ListLink _text="Blue" _path="https://youtu.be/3QYpsCfs-j8?si=4iia2LXE1YNHJ7B5" _point="." />
 		</ul>
 	    </div>
 	    <BackHouse />
