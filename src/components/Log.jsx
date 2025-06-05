@@ -41,8 +41,9 @@ function RoomContent({_title, _text}) {
 			</div>
 			<div className="text_justify card">
 				<ul>
-					<li><color className='most-recent-log'>[ 04/28/2025 Log ]</color>: After a long time using i3wm, I switched to KDE, so I will not think about programming all the time.</li>
-					<li><color className='log'>[ 04/27/2025 Log ]</color>: My first "article" was published in my university news website.</li>
+				    <li><color className='most-recent-log'>[ 05/23/2025 Log ]</color>: I got a job related to programming;</li>
+				    <li><color className='log'>[ 04/28/2025 Log ]</color>: After a long time using i3wm, I switched to KDE, so now I will not think about programming all the time;</li>
+				    <li><color className='log'>[ 04/27/2025 Log ]</color>: My first "article" was published in my university news website;</li>
 				</ul>
 			</div>
 			<p className="text_justify card">
@@ -50,12 +51,11 @@ function RoomContent({_title, _text}) {
 			</p>
 			<div className="text_justify card">
 				<ul>
-					<li><color className='log'>[ ]</color>: Read about 'new journalism' for the university work; Separate the main and most important points of it.</li>
-					<li><color className='log'>[ ]</color>: Finish to read The Bell Jar;</li>
+					<li><color className='most-recent-log'>[x]</color>: Read about 'new journalism' for the university work; Separate the main and most important points of it;</li>
 					<li><color className='most-recent-log'>[x]</color>: Add Log page in your website;</li>
 					<li><color className='log'>[ ]</color>: Write a post about the city builder game I am developing;</li>
-					<li><color className='log'>[ ]</color>: Write a post here why I switched to KDE;</li>
 					<li><color className='log'>[ ]</color>: Have a haircut;</li>
+					<li><color className='log'>[ ]</color>: Finish to read the books I am current reading;</li>
 				</ul>
 			</div>
 			<p className="text_justify card">

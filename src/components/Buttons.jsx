@@ -126,10 +126,10 @@ function RoomContent({_title, _text}) {
 		<p>
 		    -- // --
 		</p>
-		<Link target="_blank" to={_linux}>
+		<Link target="_blank" to={"https://en.wikipedia.org/wiki/Linux"}>
 		    <img src={_linux}     className="website-button" />
 		</Link>
-		<Link target="_blank" to={_slackware}>
+		<Link target="_blank" to={"http://www.slackware.com/"}>
 		    <img src={_slackware} className="website-button" />
 		</Link>
 		<Link target="_blank" to={_keyboard}>

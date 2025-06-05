@@ -61,7 +61,7 @@ export default function House() {
 	}
     };
     
-    // the follow is a monstrosity
+    // the follow is a monstrosity.
     return (
 	<>
 	    <div>
