@@ -41,7 +41,8 @@ function RoomContent({_title, _text}) {
 			</div>
 			<div className="text_justify card">
 				<ul>
-				    <li><color className='most-recent-log'>[ 05/23/2025 Log ]</color>: I got a job related to programming;</li>
+				    <li><color className='most-recent-log'>[ 06/06/2025 Log ]</color>: I interviewed the Dr. Jingmai O'Connor(06/03/2025) and Alexander Clark(06/06/2025) for my article;</li>
+				    <li><color className='log'>[ 05/23/2025 Log ]</color>: I got a job related to programming;</li>
 				    <li><color className='log'>[ 04/28/2025 Log ]</color>: After a long time using i3wm, I switched to KDE, so now I will not think about programming all the time;</li>
 				    <li><color className='log'>[ 04/27/2025 Log ]</color>: My first "article" was published in my university news website;</li>
 				</ul>
