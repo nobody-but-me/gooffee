@@ -47,8 +47,7 @@ export default function Golf23_05_2025() {
 		<p className="text_justify">
 		    The game engine for the game is being written from scratch with OpenGL and C++. I thought about using easier
 		    alternatives since I don't have the longest time in the earth for this project, but I felt like I wouldn't 
-		    really learn anything from this experience if I didn't stick out to OpenGL. If everything goes well, I'm going
-		    to be able to publish this game on steam -- also part of the challenge. The repository of the game can be found 
+		    really learn anything from this experience if I didn't stick out to OpenGL. The repository of the game can be found 
 		    here: <Link target="_blank" to={"https://github.com/nobody-but-me/Golf-game"}>https://github.com/nobody-but-me/Golf-game</Link>
 			  </p>
 		<p className="text_justify">
