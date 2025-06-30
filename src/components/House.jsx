@@ -4,17 +4,17 @@ import AppRoutes                    from '../routes.jsx'
 import About                        from './About.jsx'
 import React                        from 'react'
 
-import _about_room		    from "../assets/rooms/about-room.webp"
-import _about_room_gif		from "../assets/rooms/about-animation.gif"
-import _writing_room		from "../assets/rooms/writing-room.webp"
-import _diary_room		    from "../assets/rooms/diary-room.webp"
-import _computer_room		from "../assets/rooms/computer-room.webp"
-import _drawing_room		from "../assets/rooms/drawing-room.webp"
-import _void_room		    from "../assets/rooms/void-room.webp"
-import _spiral_room	    from "../assets/rooms/spiral-stairs.webp"
-import _log_room		    from "../assets/rooms/log-room.webp"
-import _button_room1		from "../assets/rooms/button-room-1.webp"
-import _button_room2		from "../assets/rooms/button-room-2.webp"
+import _about_room_gif	from "../assets/rooms/about-animation.gif"
+import _spiral_room	from "../assets/rooms/spiral-stairs.webp"
+import _computer_room	from "../assets/rooms/computer-room.webp"
+import _button_room1	from "../assets/rooms/button-room-1.webp"
+import _button_room2	from "../assets/rooms/button-room-2.webp"
+import _writing_room	from "../assets/rooms/writing-room.webp"
+import _drawing_room	from "../assets/rooms/drawing-room.webp"
+import _about_room	from "../assets/rooms/about-room.webp"
+import _diary_room	from "../assets/rooms/diary-room.webp"
+import _void_room	from "../assets/rooms/void-room.webp"
+import _log_room	from "../assets/rooms/log-room.webp"
 
 import '../styles/tooltip.css'
 import '../styles/app.css'
@@ -34,8 +34,10 @@ export default function House() {
 	[[_diary_room, "/diary", "Diary Room."]]
     ];
     const _navigate = useNavigate();
+    
     const _change_room = (_directory) => {
 	if (_directory != "void") {
+	    document.getElementById("/about").src = _about_room;
 	    if (_directory === "/about") {
 		const _about_room = document.getElementById("/about");
 		_about_room.src = _about_room_gif;

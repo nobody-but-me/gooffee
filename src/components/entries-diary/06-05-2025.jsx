@@ -22,7 +22,7 @@ export default function Entry06_05_2025() {
 		_text={
 		    <>
 			<p>
-			    Yesterday, June 4, I had my last classes with one of the professors of my university.
+			    Yesterday, June 4, I had my last class with one of the professors of my university.
 			    Since I joined university very late, this seems like it was last week that I started
 			    all my classes. I didn't expect that the time would fly so quickly -- because, after all,
 			    it didn't seem to do it. 
