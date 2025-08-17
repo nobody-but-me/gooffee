@@ -1,6 +1,13 @@
 
+@font-face {
+  font-family: 'MathJax_Typewriter';
+  src: url('../assets/fonts/MathJax_Typewriter-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-    font-family:            "MathJax_Typewriter", "Courier", "Courier New", "FreeMono", "Times New Roman";
+    font-family: "MathJax_Typewriter", "DejaVu Sans Mono", "Times New Roman";
     line-height: 1.5;
     font-weight: 400;
     font-size: small;
@@ -64,7 +71,7 @@ h1 {
 }
 
 button {
-    border-radius: 8px;
+    border-radius: 0px;
     border:        none;
     padding: 0.6em 1.2em;
     font-size: 1em;

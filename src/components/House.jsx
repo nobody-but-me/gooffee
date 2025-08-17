@@ -14,6 +14,7 @@ import _drawing_room	from "../assets/rooms/drawing-room.webp"
 import _about_room	from "../assets/rooms/about-room.webp"
 import _diary_room	from "../assets/rooms/diary-room.webp"
 import _void_room	from "../assets/rooms/void-room.webp"
+import _math_room	from "../assets/rooms/math-room.webp"
 import _log_room	from "../assets/rooms/log-room.webp"
 
 import '../styles/tooltip.css'
@@ -28,8 +29,8 @@ function Room({_image, _id}) {
 export default function House() {
     const _wip = "/work_in_progress";
     const _house = [
-	[[_computer_room, "/computer", "Computer Room."]],
-	[[_writing_room, "/writing", "Writing Room."], [_about_room, "/about", "About Room."], [_drawing_room, _wip, "Drawing Room."]],
+	[[_void_room, "/", "void"], [_computer_room, "/computer", "Computer Room."], [_drawing_room, _wip, "Drawing Room."]],
+	[[_writing_room, "/writing", "Writing Room."], [_about_room, "/about", "About Room."], [_math_room, _wip, "Mathematics Room."]],
 	[[_spiral_room, _wip, "Spiral Stairs."], [_button_room1, "/buttons", "Neighbors."], [_log_room, "/log", "Log Room."]],
 	[[_diary_room, "/diary", "Diary Room."]]
     ];
