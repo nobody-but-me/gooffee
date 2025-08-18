@@ -47,9 +47,12 @@ function RoomContent({_title, _text}) {
     
     return (
 	<div className="room_content">
-	    <h1 className="text_right">
+	    <h2 className="text_justify card">
 		My dear Neighbors.
-	    </h1>
+	    </h2>
+	    <div className="room_content_image">
+		<RoomImage _room_image={_default_room_image} />
+	    </div>
 	    <div className="text_justify card">
 		<Link target="_blank" to="https://iwillneverbehappy.neocities.org">
 		    <img src={_iwillneverbehappy} className="website-button" />
@@ -145,9 +148,6 @@ export default function Buttons() {
     return (
 	<div id="room_container">
 	    <RoomContent />
-	    <div className="room_content_image">
-		<RoomImage _room_image={_default_room_image} />
-	    </div>
 	</div>
     )
 }

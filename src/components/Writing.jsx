@@ -25,9 +25,12 @@ function RoomImage({_room_image}) {
 function RoomContent({_title, _text}) {
     return (
 	<div className="room_content">
-	    <h1 className="text_right">
+	    <h2 className="text_center card">
 		Writing
-	    </h1>
+	    </h2>
+	    <div className="room_content_image">
+		<RoomImage _room_image={_default_room_image} />
+	    </div>
 	    <p className="text_left">
 		My writing projects.
 	    </p>
@@ -55,9 +58,6 @@ export default function Writing() {
     return (
 	<div id="room_container">
 	    <RoomContent />
-	    <div className="room_content_image">
-		<RoomImage _room_image={_default_room_image} />
-	    </div>
 	</div>
     )
 }

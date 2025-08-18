@@ -1,37 +1,62 @@
 
 #room_container {
-    /* border: 2px solid red; */
     
     position: absolute;
     left: 50%;
     top:  50%;
     transform: translate(-50%, -50%);
     
-    border-radius: 15px;
-    height:        100%;
-    width:         90%;
+    border-radius: 8px;
+    height:        98%;
+    width:         99%;
     
     display:         flex;
     justify-content: center;
-    flex-direction:  row;
+    flex-direction:  column;
+    align-items:     center;
     
     overflow-y: hidden;
+
+    background: url("../assets/background/grid-background.png") repeat;
+    -webkit-animation: scrolling_background 100s linear infinite;
+    -moz-animation:    scrolling_background 100s linear infinite;
 }
+
+@-webkit-keyframes scrolling_background {
+    0% {
+	background-position-x: 0%;
+	background-position-y: 0%;
+    }
+    50% {
+	background-position-x: -100%;
+	background-position-y: -100%;
+    }
+    100% {
+	background-position-x: 0%;
+	background-position-y: 0%;
+    }
+}
+
 .room_content_image {
     display:           flex;
     justify-content: center;
-    flex-direction:  column;
+    flex-direction:  row;
 }
 .room_content {
+    background-color: rgba(1, 1, 1, 1);
+    
     display:         flex;
     justify-content: start;
     flex-direction:  column;
     
-    height: 100%;
-    width:  100%;
+    height: 90%;
+    width:  50%;
+    
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
     
     padding:        15px;
-    padding-right:  40px;
+    padding-right:  15px;
     overflow-y:     auto;
     overflow-x:     hidden;
 }
@@ -42,15 +67,16 @@
     margin-bottom: 15px;
 }
 .card {
-    background-color: rgba(7, 7, 7, 255);
+    background-color: rgba(7, 7, 7, 1);
     border-radius: 3px;
     padding: 15px;
 }
 .card ul {
-    border-left: 2px solid orange;
-    padding-left: 25px;
-    margin-top:   15px;
-    margin-bottom:15px;
+    padding-left: 15px;
+}
+.card i {
+    margin-right: 15px;
+    margin-left:   5px;
 }
 .text_justify {
     text-align: justify;
@@ -245,7 +271,6 @@
 	overflow-y: auto;
     }
     .card ul {
-	border-left: none;
 	margin-left: 25px;
     }
     

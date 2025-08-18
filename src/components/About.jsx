@@ -2,29 +2,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import _default_room_image from "../assets/about-room-image.webp"
+import default_room_image from "../assets/about-room-image.webp"
 import BackHouse from "./BackHouse.jsx"
 
 import "../styles/rooms.css"
 import "../styles/app.css"
 
-const _DEFAULT_IMAGE_SIZE = 400
+const DEFAULT_IMAGE_SIZE = 350
 
-
-function ListLink({_text, _path, _point}) {
-    return <li><a target="blank" href={_path}>{_text}</a>{_point}</li>;
+function RoomImage({room_image}) {
+    return <img src={room_image} height={DEFAULT_IMAGE_SIZE} width={DEFAULT_IMAGE_SIZE} />;
 }
 
-function RoomImage({_room_image}) {
-    return <img src={_room_image} height={_DEFAULT_IMAGE_SIZE} width={_DEFAULT_IMAGE_SIZE} />;
+function ListLink({text, path, point}) {
+    return <li><a target="blank" href={path}>{text}</a>{point}</li>;
 }
 
-function RoomContent({_title, _text}) {
+function RoomContent({title, text}) {
     return (
 	<div className="room_content">
-	    <h1 className="text_right">
+	    <h2 className="text_center card">
 		A Room About Someone.
-	    </h1>
+	    </h2>
+	    <div className="room_content_image">
+		<RoomImage room_image={default_room_image} />
+	    </div>
 	    <p className="text_justify card">
 		"Olho a caixa postal. Nada de novo. Volto ao "principal". Também nada
 		de novo. Procuro ali pelo algo, mas 'algo' algum existe. Talvez falte
@@ -51,28 +53,29 @@ function RoomContent({_title, _text}) {
 		    </li>
 		</ul>
 	    </div>
-	    <h1 className="text_right">
+	    <h2 className="text_justify">
 		Contact
-	    </h1>
+	    </h2>
 	    <div className="text_justify card">
 		<ul>
 		    <li>Gmail: asgooffeeasme@gmail.com </li>
+		    <li></li>
 		</ul>
 	    </div>
-	    <h1 className="text_right">
+	    <h2 className="text_justify">
 		More
-	    </h1>
+	    </h2>
 	    <div className="text_justify card">
 		Interests:
 		<ul>
+		    <li>Recreational programming and computer science in general;</li>
+		    <li>Physics, biology and mathematics;</li>
+		    <li>Literature, writing and drawing;</li>
 		    <li>Linguistics;</li>
-		    <li>Recreational programming, Computer Science;</li>
-		    <li>Physics, biology, mathematics;</li>
-		    <li>Literature, drawing, amateur filmmaking.</li>
 		</ul>
 	    </div>
 	    <div className="text_justify card">
-		Random facts about me listed by a special friend(M.):
+		Random facts about me listed by a special friend M.:
 		<ul>
 		    <li>daniel wears ladybug slippers;</li>
 		    <li>daniel loves crocodiles;</li>
@@ -84,15 +87,15 @@ function RoomContent({_title, _text}) {
 	    <div className="text_justify card">
 		Misc:
 		<ul>
-		    <ListLink _text="Better video about the construction of the pyramids" _path="https://youtu.be/EF3w2Dldg1o?si=aSjqwOodBWYyWTbS" _point=";" />
-		    <ListLink _text="ToaruOS running on a real hardware" _path="https://youtu.be/1hz8fYghklw?si=SZ_TtaKAR-YKFIS2" _point=";" />
-		    <ListLink _text="Miranda's personal WebSite" _path="https://mirandaisasleep.neocities.org" _point=";" />
-		    <ListLink _text="Voylin's 1st April fool" _path="https://www.youtube.com/watch?v=CJEyuMoV9o0" _point=";" />
-		    <ListLink _text="Why Miranda is straight" _path="https://mirandaisstraight.neocities.org" _point=";" />
-		    <ListLink _text="Copacabana song" _path="https://youtu.be/uLo0i-vCt_Y?si=V4_BpVKLfiy4qS1D" _point=";" />
-		    <ListLink _text="Russian Blue" _path="https://youtu.be/2LiBizgWqMM?si=KeotcyWYyQDEK5TI" _point=";" />
-		    <ListLink _text="Tsoding Faq" _path="https://github.com/tsoding/faq" _point=";" />
-		    <ListLink _text="Blue" _path="https://youtu.be/3QYpsCfs-j8?si=4iia2LXE1YNHJ7B5" _point="." />
+		    <ListLink text="Better video about the construction of the pyramids" path="https://youtu.be/EF3w2Dldg1o?si=aSjqwOodBWYyWTbS" point=";" />
+		    <ListLink text="ToaruOS running on a real hardware" path="https://youtu.be/1hz8fYghklw?si=SZ_TtaKAR-YKFIS2" point=";" />
+		    <ListLink text="Miranda's personal WebSite" path="https://mirandaisasleep.neocities.org" point=";" />
+		    <ListLink text="Voylin's 1st April fool" path="https://www.youtube.com/watch?v=CJEyuMoV9o0" point=";" />
+		    <ListLink text="Why Miranda is straight" path="https://mirandaisstraight.neocities.org" point=";" />
+		    <ListLink text="Copacabana song" path="https://youtu.be/uLo0i-vCt_Y?si=V4_BpVKLfiy4qS1D" point=";" />
+		    <ListLink text="Russian Blue" path="https://youtu.be/2LiBizgWqMM?si=KeotcyWYyQDEK5TI" point=";" />
+		    <ListLink text="Tsoding F.A.Q." path="https://github.com/tsoding/faq" point=";" />
+		    <ListLink text="Blue" path="https://youtu.be/3QYpsCfs-j8?si=4iia2LXE1YNHJ7B5" point="." />
 		</ul>
 	    </div>
 	    <BackHouse />
@@ -105,11 +108,6 @@ export default function About() {
 	<div id="room_container">
 	    <RoomContent />
 	    <div style={{width:'50px'}}></div>
-	    {/*
-	    <div className="room_content_image">
-		<RoomImage _room_image={_default_room_image} />
-	    </div>
-	    */}
 	</div>
     )
 }
