@@ -29,7 +29,8 @@ function Room({image, id}) {
 export default function House() {
     const wip = "/work_in_progress";
     const house = [
-	[[void_room, "void", "void"], [computer_room, "/computer", "Computer Room."], [drawing_room, wip, "Drawing Room."]],
+	// [[void_room, "void", "void"], [computer_room, "/computer", "Computer Room."], [drawing_room, wip, "Drawing Room."]],
+	[[void_room, "void", "void"], [computer_room, "/computer", "Computer Room."], [void_room, "void", "void"]],
 	[[writing_room, "/writing", "Writing Room."], [about_room, "/about", "About Room."], [math_room, wip, "Mathematics Room."]],
 	[[spiral_room, wip, "Spiral Stairs."], [button_room1, "/buttons", "Neighbors."], [log_room, "/log", "Log Room."]],
 	[[diary_room, "/diary", "Diary Room."]]

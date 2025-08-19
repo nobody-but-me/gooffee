@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import _default_room_image from "../assets/diary-room-image.webp"
+import default_room_image from "../assets/diary-room-image.webp"
 
 import "../styles/rooms.css"
 import "../styles/tree.css"
@@ -16,20 +16,20 @@ import Entry06_05_2025 from "./entries-diary/06-05-2025.jsx"
 import BackHouse       from "./BackHouse.jsx"
 
 
-const _DEFAULT_IMAGE_SIZE = 400;
+const DEFAULT_IMAGE_SIZE = 400;
 
-function RoomImage({_room_image}) {
-    return <img src={_room_image} height={_DEFAULT_IMAGE_SIZE} width={_DEFAULT_IMAGE_SIZE} />;
+function RoomImage({room_image}) {
+    return <img src={room_image} height={DEFAULT_IMAGE_SIZE} width={DEFAULT_IMAGE_SIZE} />;
 }
 
-function RoomContent({_title, _text}) {
+function RoomContent({ title,  text}) {
     return (
 	<div className="room_content">
 	    <h2 className="text_justify card">
 		Diary/Blog.
 	    </h2>
 	    <div className="room_content_image">
-		<RoomImage _room_image={_default_room_image} />
+		<RoomImage  room_image={ default_room_image } />
 	    </div>
 	    <p className="text_left">
 		Here you are going to find all of my blog posts.

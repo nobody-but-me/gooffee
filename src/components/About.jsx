@@ -33,26 +33,19 @@ function RoomContent({title, text}) {
 		um quê de fantástico nas conversas do dia-a-dia, digo a mim mesmo 'numa
 		mudez impressionante. Levanto. Vou ao banheiro. Lavo as mãos. Seco-as.
 		Olho-me no espelho; sinto querer soltar gemido grego, mas grito algum
-		desentala da garganta. Volto ao quarto. Nada de novo, repito 
+		desentala da garganta. Volto ao quarto. Nada de novo, repito,
 		esquizofrênico. 
 		<br />
 		<br />
 		"Nas mansas perguntas diárias, o que falta é o quê filósofo. Mas o 
 		que exatamente seria esse quê? Substantivo? Próprio ou indefinido? 
-		Não sei, e talvez nem queira saber. Certa vez ouvi cientista dizer 
+		Não sei, e talvez nem queira. Certa vez ouvi cientista dizer 
 		que sente-se bem com a própria ignorância sobre certas questões 
 		sobre certas coisas; achei um absurdo: como pode um cientista 
 		satisfazer-se com algo tão pouco, sem-sal, tempero ou caldo com'a 
-		ignorância? [...]"
+		ignorância? Hoje tenho a sensação de querer descobrir o porquê, mas 'inda
+		d'um jeito tão infantil! Gosto de crer que é daí que vem o ego cientista."
 	    </p>
-	    <div className="text_justify italic card">
-		<ul>
-		    <li>
-			"In the mind of those who constantly live with a death sentence,
-			the impossible real world is the unique thing to stick around."
-		    </li>
-		</ul>
-	    </div>
 	    <h2 className="text_justify">
 		Contact
 	    </h2>
@@ -75,7 +68,7 @@ function RoomContent({title, text}) {
 		</ul>
 	    </div>
 	    <div className="text_justify card">
-		Random facts about me listed by a special friend M.:
+		Random facts about me listed by M.:
 		<ul>
 		    <li>daniel wears ladybug slippers;</li>
 		    <li>daniel loves crocodiles;</li>
@@ -93,8 +86,10 @@ function RoomContent({title, text}) {
 		    <ListLink text="Voylin's 1st April fool" path="https://www.youtube.com/watch?v=CJEyuMoV9o0" point=";" />
 		    <ListLink text="Why Miranda is straight" path="https://mirandaisstraight.neocities.org" point=";" />
 		    <ListLink text="Copacabana song" path="https://youtu.be/uLo0i-vCt_Y?si=V4_BpVKLfiy4qS1D" point=";" />
-		    <ListLink text="Russian Blue" path="https://youtu.be/2LiBizgWqMM?si=KeotcyWYyQDEK5TI" point=";" />
 		    <ListLink text="Tsoding F.A.Q." path="https://github.com/tsoding/faq" point=";" />
+		    <ListLink text="Russian Blue" path="https://youtu.be/2LiBizgWqMM?si=KeotcyWYyQDEK5TI" point=";" />
+		    <ListLink text="Childhood" path="https://youtu.be/ecptG36KKp8?si=Vz4t1t9yAgaBbs7Z" point=";" />
+		    <ListLink text="Nevermind" path="https://youtu.be/oRCB7fTpl3Y?si=3ypRh7ML1mRnj2Bk" point=";" />
 		    <ListLink text="Blue" path="https://youtu.be/3QYpsCfs-j8?si=4iia2LXE1YNHJ7B5" point="." />
 		</ul>
 	    </div>
