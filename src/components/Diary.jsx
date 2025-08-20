@@ -9,10 +9,10 @@ import "../styles/tree.css"
 import "../styles/app.css"
 
 // Entries
-import Entry10_21_2024 from "./entries-diary/10-21-2024.jsx"
-import Entry12_23_2024 from "./entries-diary/12-23-2024.jsx"
-import Entry04_16_2025 from "./entries-diary/04-16-2025.jsx"
-import Entry06_05_2025 from "./entries-diary/06-05-2025.jsx"
+import Entry1 from "./entries-diary/1.jsx"
+import Entry2 from "./entries-diary/2.jsx"
+import Entry3 from "./entries-diary/3.jsx"
+import Entry4 from "./entries-diary/4.jsx"
 import BackHouse       from "./BackHouse.jsx"
 
 
@@ -41,16 +41,19 @@ function RoomContent({ title,  text}) {
 		</p>
 	    </div>
 	    <div className="text_justify card most-recent-purple">
-		<Entry06_05_2025 />
+		<Entry4 />
 	    </div>
 	    <div className="text_justify card">
-		<Entry04_16_2025 />
+		<Entry4 />
 	    </div>
 	    <div className="text_justify card">
-		<Entry12_23_2024 />
+		<Entry3 />
 	    </div>
 	    <div className="text_justify card">
-		<Entry10_21_2024 />
+		<Entry2 />
+	    </div>
+	    <div className="text_justify card">
+		<Entry1 />
 	    </div>
 	    <BackHouse />
 	</div>
