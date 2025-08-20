@@ -2,13 +2,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Tree from "../Tree.jsx"
-import "../../styles/tree.css"
-import "../../styles/app.css"
+import Tree from "../../utils/Tree.jsx"
+import "../../../styles/tree.css"
+import "../../../styles/app.css"
 
-import _file from "../../assets/icons/file.webp"
-import _innocence from "../../assets/diary-images/innocence.jpg"
-import _innocence2 from "../../assets/diary-images/innocence2.jpg"
+import _file from "../../../assets/icons/file.webp"
+import _innocence from "../../../assets/diary-images/innocence.jpg"
+import _innocence2 from "../../../assets/diary-images/innocence2.jpg"
 
 export default function Entry12_23_2024() {
     const _pretender = "https://www.youtube.com/watch?v=12zAD0y_vT0";

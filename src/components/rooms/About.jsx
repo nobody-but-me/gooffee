@@ -2,11 +2,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import default_room_image from "../assets/about-room-image.webp"
-import BackHouse from "./BackHouse.jsx"
+import default_room_image from "../../assets/about-room-image.webp"
+import BackHouse from "../utils/BackHouse.jsx"
 
-import "../styles/rooms.css"
-import "../styles/app.css"
+import "../../styles/rooms.css"
+import "../../styles/app.css"
 
 const DEFAULT_IMAGE_SIZE = 350
 

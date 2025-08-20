@@ -2,12 +2,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import _default_room_image from "../assets/log-room-image.webp"
-import BackHouse from "./BackHouse.jsx"
+import _default_room_image from "../../assets/log-room-image.webp"
+import BackHouse from "../utils/BackHouse.jsx"
 
-import "../styles/rooms.css"
-import "../styles/tree.css"
-import "../styles/app.css"
+import "../../styles/rooms.css"
+import "../../styles/tree.css"
+import "../../styles/app.css"
 
 import Entry05_04_2025 from "./entries-logs/05-04-2025.jsx";
 

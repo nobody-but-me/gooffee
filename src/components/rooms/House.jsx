@@ -1,24 +1,24 @@
 
 import { Link, Route, useNavigate } from 'react-router-dom'
-import AppRoutes                    from '../routes.jsx'
+import AppRoutes                    from '../../routes.jsx'
 import About                        from './About.jsx'
 import React                        from 'react'
 
-import about_room_gif	from "../assets/rooms/about-animation.gif"
-import spiral_room	from "../assets/rooms/spiral-stairs.webp"
-import computer_room	from "../assets/rooms/computer-room.webp"
-import button_room1	from "../assets/rooms/button-room-1.webp"
-import button_room2	from "../assets/rooms/button-room-2.webp"
-import writing_room	from "../assets/rooms/writing-room.webp"
-import drawing_room	from "../assets/rooms/drawing-room.webp"
-import about_room	from "../assets/rooms/about-room.webp"
-import diary_room	from "../assets/rooms/diary-room.webp"
-import void_room	from "../assets/rooms/void-room.webp"
-import math_room	from "../assets/rooms/math-room.webp"
-import log_room	from "../assets/rooms/log-room.webp"
+import about_room_gif	from "../../assets/rooms/about-animation.gif"
+import spiral_room	from "../../assets/rooms/spiral-stairs.webp"
+import computer_room	from "../../assets/rooms/computer-room.webp"
+import button_room1	from "../../assets/rooms/button-room-1.webp"
+import button_room2	from "../../assets/rooms/button-room-2.webp"
+import writing_room	from "../../assets/rooms/writing-room.webp"
+import drawing_room	from "../../assets/rooms/drawing-room.webp"
+import about_room	from "../../assets/rooms/about-room.webp"
+import diary_room	from "../../assets/rooms/diary-room.webp"
+import void_room	from "../../assets/rooms/void-room.webp"
+import math_room	from "../../assets/rooms/math-room.webp"
+import log_room	from "../../assets/rooms/log-room.webp"
 
-import '../styles/tooltip.css'
-import '../styles/app.css'
+import '../../styles/tooltip.css'
+import '../../styles/app.css'
 
 const DEFAULT_ROOM_SIZE = 250;
 

@@ -2,10 +2,10 @@
 import React from 'react'
 import { Link, Route, useNavigate } from 'react-router-dom'
 
-import BackHouse from "../../BackHouse.jsx"
-import "../../../styles/rooms.css"
-import "../../../styles/tree.css"
-import "../../../styles/app.css"
+import BackHouse from "../../../utils/BackHouse.jsx"
+import "../../../../styles/rooms.css"
+import "../../../../styles/tree.css"
+import "../../../../styles/app.css"
 
 function BackComputerRoom() {
     return (

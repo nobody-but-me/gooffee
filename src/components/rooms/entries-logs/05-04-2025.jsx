@@ -2,13 +2,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Tree from "../Tree.jsx"
-import "../../styles/tree.css"
-import "../../styles/app.css"
+import Tree from "../../utils/Tree.jsx"
+import "../../../styles/tree.css"
+import "../../../styles/app.css"
 
-import _file from "../../assets/icons/file.webp";
-// import video1 from "./Video1.mp4";
-// import video2 from "./Video2.mp4";
+import _file from "../../../assets/icons/file.webp";
+
 
 export default function Entry05_04_2025() {
     return (

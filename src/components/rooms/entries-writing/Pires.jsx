@@ -2,12 +2,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Tree from "../Tree.jsx"
-import "../../styles/tree.css"
-import "../../styles/app.css"
+import Tree from "../../utils/Tree.jsx"
+import "../../../styles/tree.css"
+import "../../../styles/app.css"
 
-import _default_room_image from "../../assets/writing-room-image.webp"
-import _book from "../../assets/icons/book.webp"
+import _default_room_image from "../../../assets/writing-room-image.webp"
+import _book from "../../../assets/icons/book.webp"
 
 export default function Pires() {
     return (

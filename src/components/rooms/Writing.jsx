@@ -2,18 +2,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import _default_room_image from "../assets/writing-room-image.webp"
-import _book from "../assets/icons/book.webp"
+import _default_room_image from "../../assets/writing-room-image.webp"
+import _book from "../../assets/icons/book.webp"
 
-import "../styles/rooms.css"
-import "../styles/tree.css"
-import "../styles/app.css"
+import "../../styles/rooms.css"
+import "../../styles/tree.css"
+import "../../styles/app.css"
 
 // Articles
 import DeTodosOsMales	from "./entries-writing/DeTodosOsMales.jsx"
 import Budapeste	from "./entries-writing/Budapeste.jsx"
 import Pires		from "./entries-writing/Pires.jsx"
-import BackHouse	from "./BackHouse.jsx"
+import BackHouse	from "../utils/BackHouse.jsx"
 
 
 const _DEFAULT_IMAGE_SIZE = 400

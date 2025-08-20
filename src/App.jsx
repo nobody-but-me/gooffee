@@ -2,7 +2,7 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 import React from                       'react'
 
-import About from './components/About.jsx'
+import About from './components/rooms/About.jsx'
 import AppRoutes from './routes.jsx'
 import './styles/app.css'
 

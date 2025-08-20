@@ -2,18 +2,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import default_room_image from "../assets/diary-room-image.webp"
+import BackHouse       from "../utils/BackHouse.jsx"
 
-import "../styles/rooms.css"
-import "../styles/tree.css"
-import "../styles/app.css"
+import default_room_image from "../../assets/diary-room-image.webp"
+
+import "../../styles/rooms.css"
+import "../../styles/tree.css"
+import "../../styles/app.css"
 
 // Entries
 import Entry1 from "./entries-diary/1.jsx"
 import Entry2 from "./entries-diary/2.jsx"
 import Entry3 from "./entries-diary/3.jsx"
 import Entry4 from "./entries-diary/4.jsx"
-import BackHouse       from "./BackHouse.jsx"
 
 
 const DEFAULT_IMAGE_SIZE = 400;

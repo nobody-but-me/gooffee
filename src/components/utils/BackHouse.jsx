@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import '../styles/rooms.css'
+import '../../styles/rooms.css'
 
 export default function BackHouse() {
     return (

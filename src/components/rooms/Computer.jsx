@@ -2,12 +2,12 @@
 import React from 'react'
 import { Link, Route, useNavigate } from 'react-router-dom'
 
-import _default_room_image from "../assets/computer-room-image.webp"
-import BackHouse from "./BackHouse.jsx"
+import _default_room_image from "../../assets/computer-room-image.webp"
+import BackHouse from "../utils/BackHouse.jsx"
 
-import "../styles/rooms.css"
-import "../styles/tree.css"
-import "../styles/app.css"
+import "../../styles/rooms.css"
+import "../../styles/tree.css"
+import "../../styles/app.css"
 
 
 const _DEFAULT_IMAGE_SIZE = 400
