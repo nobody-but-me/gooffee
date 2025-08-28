@@ -34,9 +34,6 @@ import _keyboard          from "../../assets/buttons/keyboard.png"
 
 const _DEFAULT_IMAGE_SIZE = 400
 
-function ListLink({_text, _path, _point}) {
-    return <li><a target="blank" href={_path}>{_text}</a>{_point}</li>;
-}
 
 function RoomImage({_room_image}) {
     return <img src={_room_image} height={_DEFAULT_IMAGE_SIZE} width={_DEFAULT_IMAGE_SIZE} />;
@@ -52,7 +49,7 @@ function RoomContent({_title, _text}) {
 	    <div className="room_content_image">
 		<RoomImage _room_image={_default_room_image} />
 	    </div>
-	    <div className="text_justify card">
+	    <div className="card">
 		<Link target="_blank" to="https://iwillneverbehappy.neocities.org">
 		    <img src={_iwillneverbehappy} className="website-button" />
 		</Link>

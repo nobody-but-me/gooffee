@@ -19,11 +19,19 @@ function ListLink({text, path, point}) {
 }
 
 function RoomContent({title, text}) {
+    const converter = new showdown.Converter();
+    let t = '## A Room about someone.';
+    // NOTE: This string needs to be sanitized before parsing to HTML.
+    let html = converter.makeHtml(t);
+    
     return (
 	<div className="room_content">
 	    <h2 className="text_center card">
 		A Room About Someone.
 	    </h2>
+	    
+	    <div dangerouslySetInnerHTML={{__html: html}} />
+	    
 	    <div className="room_content_image">
 		<RoomImage room_image={default_room_image} />
 	    </div>
