@@ -12,8 +12,8 @@
     --secondary-color: #f2f2f2;
     /* --text-color: black; */
     --background-color: transparent;
-    --blockquote-border-color: #999;
-    --blockquote-background-color: #f9f9f9;
+    --blockquote-border-color: #242424;
+    --blockquote-background-color: #070707;
     --code-background-color: #ccc;
     --table-border-color: #ccc;
     --table-header-background-color: #f2f2f2;
@@ -90,9 +90,11 @@
 
 .showdowncontainer blockquote {
     margin: 0 0 var(--margin-large) var(--margin-large);
-    padding: var(--padding-medium);
+    padding: var(--padding-small);
+    padding-left: var(--padding-large);
+    border:      1px solid var(--blockquote-border-color);
     border-left: 4px solid var(--blockquote-border-color);
-    color: #777;
+    color: #ededed;
     background: var(--blockquote-background-color);
 }
 
