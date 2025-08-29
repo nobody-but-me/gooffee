@@ -16,8 +16,8 @@ import "../../styles/app.css"
 // Entries
 import Entry1 from "./entries-diary/1.md?raw";
 import Entry2 from "./entries-diary/2.md?raw";
-// import Entry3 from "./entries-diary/3.jsx"
-// import Entry4 from "./entries-diary/4.jsx"
+import Entry3 from "./entries-diary/3.md?raw";
+import Entry4 from "./entries-diary/4.md?raw";
 
 
 const DEFAULT_IMAGE_SIZE = 400;
@@ -54,9 +54,12 @@ function RoomContent({ title,  text}) {
     
     let entry1 = converter.makeHtml(Entry1);
     document = simple_sanitizer(entry1);
-    
     let entry2 = converter.makeHtml(Entry2);
     document = simple_sanitizer(entry2);
+    let entry3 = converter.makeHtml(Entry3);
+    document = simple_sanitizer(entry3);
+    let entry4 = converter.makeHtml(Entry4);
+    document = simple_sanitizer(entry4);
     
     return (
 	<div className="room_content">
@@ -74,17 +77,29 @@ function RoomContent({ title,  text}) {
 		<p>
 		    Most recent
 		</p>
-	    </div>{/*
+	    </div>
 	    <div className="text_justify card most-recent-purple">
-		<Entry4 />
+		<Tree 
+		    _image={_file} 
+		    _title="Science, journalism and adulthood"
+		    _text={
+			<div className="showdowncontainer">
+			  <span dangerouslySetInnerHTML={{__html: entry4}} />
+			</div>
+		    }
+		/>
 	    </div>
 	    <div className="text_justify card">
-		<Entry4 />
+		<Tree 
+		    _image={_file} 
+		    _title="Young and Foolish"
+		    _text={
+			<div className="showdowncontainer">
+			  <span dangerouslySetInnerHTML={{__html: entry3}} />
+			</div>
+		    }
+		/>
 	    </div>
-	    <div className="text_justify card">
-		<Entry3 />
-	    </div>
-	    */}
 	    <div className="text_justify card">
 		{/*<Entry2 />*/}
 		<Tree 
