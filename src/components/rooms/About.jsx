@@ -7,6 +7,7 @@ import BackHouse from "../utils/BackHouse.jsx"
 
 import "../../styles/rooms.css"
 import "../../styles/app.css"
+import "../../styles/showdown.css"
 
 import markdown from './test_markdown.md?raw';
 
@@ -44,15 +45,16 @@ function simple_sanitizer(html) {
 function RoomContent({title, text}) {
     const converter = new showdown.Converter({strikethrough: true, emoji: true, tasklists: true});
     let html = converter.makeHtml(markdown);
-    const document = simple_sanitizer(html);
+    const document = simple_sanitizer(html)
     
     return (
 	<div className="room_content">
 	    <h2 className="text_center card">
 		A Room About Someone.
 	    </h2>
-	    
-	    <div dangerouslySetInnerHTML={{__html: document}} />
+	    <div className="showdowncontainer">
+		<span dangerouslySetInnerHTML={{__html: document}} />
+	    </div>
 	    
 	    <div className="room_content_image">
 		<RoomImage room_image={default_room_image} />
