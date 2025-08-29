@@ -9,8 +9,6 @@ import "../../styles/rooms.css"
 import "../../styles/app.css"
 import "../../styles/showdown.css"
 
-import markdown from './test_markdown.md?raw';
-
 const DEFAULT_IMAGE_SIZE = 350
 
 function RoomImage({room_image}) {
@@ -21,42 +19,12 @@ function ListLink({text, path, point}) {
     return <li><a target="blank" href={path}>{text}</a>{point}</li>;
 }
 
-function simple_sanitizer(html) {
-    // TODO: It's not very necessary for now, but, in the future, it would be interesting to build a more precise and robust sanitizer.
-    const tmp = document.createElement('div');
-    tmp.innerHTML = html;
-    
-    const allowed_tags = ['h1', 'h2', 'h3', 'a', 'p', 'span', 'ul', 'li'];
-    
-    function clean_nodes(node) {
-	if (node.nodeType === Node.ELEMENT_NODE) {
-	    if (!allowed_tags.includes(node.tagName.toLowerCase())) {
-		node.remove();
-		return;
-	    }
-	}
-	const children = Array.from(node.childNodes);
-	children.forEach(clean_nodes);
-    }
-    clean_nodes(tmp);
-    return tmp.innerHTML;
-}
-
 function RoomContent({title, text}) {
-    const converter = new showdown.Converter({strikethrough: true, emoji: true, tasklists: true});
-    let html = converter.makeHtml(markdown);
-    alert(html);
-    const document = simple_sanitizer(html)
-    
     return (
 	<div className="room_content">
 	    <h2 className="text_center card">
 		A Room About Someone.
 	    </h2>
-	    <div className="showdowncontainer">
-		<span dangerouslySetInnerHTML={{__html: document}} />
-	    </div>
-	    
 	    <div className="room_content_image">
 		<RoomImage room_image={default_room_image} />
 	    </div>
