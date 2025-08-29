@@ -45,6 +45,7 @@ function simple_sanitizer(html) {
 function RoomContent({title, text}) {
     const converter = new showdown.Converter({strikethrough: true, emoji: true, tasklists: true});
     let html = converter.makeHtml(markdown);
+    alert(html);
     const document = simple_sanitizer(html)
     
     return (

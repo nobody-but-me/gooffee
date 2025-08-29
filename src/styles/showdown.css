@@ -82,10 +82,22 @@
 .showdowncontainer ul, .showdowncontainer ol {
     margin-bottom: var(--margin-medium);
 }
+.showdowncontainer ol {
+    border-left: 3px solid #181818;
+    padding-left: var(--margin-extra-large);
+}
 
 .showdowncontainer li {
     margin-bottom: var(--margin-small);
-    margin-left: var(--margin-extra-large);
+    padding-left: var(--margin-medium);
+}
+
+.showdowncontainer ol li {
+    padding-left: 0px;
+}
+
+.showdowncontainer .task-list-item {
+    margin-left: var(--margin-large);
 }
 
 .showdowncontainer blockquote {

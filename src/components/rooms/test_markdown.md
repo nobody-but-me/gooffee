@@ -8,6 +8,12 @@ That's a test markdown file.
 - [ ] test;
 - [x] test2;
 
+1. test;
+2. tes2;
+
+- test;
+- test2;
+
 ~~test test test~~
 
 Link: <https://asgooffeeasme.neocities.org>
