@@ -25,7 +25,7 @@ function RoomImage({_room_image}) {
 function RoomContent({_title, _text}) {
     return (
 	<div className="room_content">
-	    <h2 className="text_justify card">
+	    <h2 className="text_center card">
 		Miscellaneous Logs About Everything, really.
 	    </h2>
 	    <div className="room_content_image">
@@ -56,15 +56,15 @@ function RoomContent({_title, _text}) {
 	</p>
 	<div className="text_justify card">
 	    <ul>
-		<li><color className='most-recent-log'>[x]</color>: Read about 'new journalism' for the university work; Separate the main and most important points of it;</li>
-		<li><color className='most-recent-log'>[x]</color>: Add Log page in your website;</li>
-		<li><color className='log'>[-]</color>: Write a post about the city builder game I am developing;</li>
-		<li><color className='most-recent-log'>[x]</color>: Have a haircut;</li>
-		<li><color className='log'>[ ]</color>: Finish to read the books I am current reading (so many);</li>
-		<li><color className='log'>[ ]</color>: Implement the Markdown idea;</li>
-		<li><color className='log'>[ ]</color>: Update your resume;</li>
-		<li><color className='log'>[ ]</color>: Update <ListLink _text={"Computer Room"} _path={"/computer"} />;</li>
 		<li><color className='log'>[ ]</color>: Add content to <ListLink _text={"Math Room"} _path={"/work_in_progress"} />;</li>
+		<li><color className='log'>[ ]</color>: Update <ListLink _text={"Computer Room"} _path={"/computer"} />;</li>
+		<li><color className='log'>[ ]</color>: Update your resume;</li>
+		<li><color className='log'>[ ]</color>: Implement the Markdown idea;</li>
+		<li><color className='log'>[ ]</color>: Finish to read the books I am current reading (so many);</li>
+		<li><color className='most-recent-log'>[x]</color>: Have a haircut;</li>
+		<li><color className='log'>[-]</color>: Write a post about the city builder game I am developing;</li>
+		<li><color className='most-recent-log'>[x]</color>: Add Log page in your website;</li>
+		<li><color className='most-recent-log'>[x]</color>: Read about 'new journalism' for the university work; Separate the main and most important points of it;</li>
 	    </ul>
 	</div>
 	<p className="text_justify card">

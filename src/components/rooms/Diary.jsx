@@ -27,11 +27,11 @@ function RoomImage({room_image}) {
 }
 
 function simple_sanitizer(html) {
-    // TODO: It's not very necessary for now, but, in the future, it would be interesting to build a more precise and robust sanitizer.
+    // TODO: It's not very necessary for now, but, in the future, it would be interesting to build a more robust sanitizer.
     const tmp = document.createElement('div');
     tmp.innerHTML = html;
     
-    const allowed_tags = ['h1', 'h2', 'h3', 'a', 'p', 'span', 'ul', 'li'];
+    const allowed_tags = ['h1', 'h2', 'h3', 'a', 'p', 'span', 'ul', 'li', 'img'];
     
     function clean_nodes(node) {
 	if (node.nodeType === Node.ELEMENT_NODE) {
@@ -48,13 +48,14 @@ function simple_sanitizer(html) {
 }
 
 function RoomContent({ title,  text}) {
-    // TODO: find a better way of doing that.
     const converter = new showdown.Converter({strikethrough: true, emoji: true, tasklist: true});
     let document;
     
+    // TODO: find a better way of doing the follow.
     let entry1 = converter.makeHtml(Entry1);
     document = simple_sanitizer(entry1);
     let entry2 = converter.makeHtml(Entry2);
+    // alert(entry2);
     document = simple_sanitizer(entry2);
     let entry3 = converter.makeHtml(Entry3);
     document = simple_sanitizer(entry3);

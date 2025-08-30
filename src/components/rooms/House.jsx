@@ -61,7 +61,7 @@ export default function House() {
     const on_room_mouse_leave = (directory) => {
 	if (directory === "/buttons") {
 	    const _buttons_room = document.getElementById("/buttons");
-	    buttons_room.src = button_room1;
+	    _buttons_room.src = button_room1;
 	}
     };
     

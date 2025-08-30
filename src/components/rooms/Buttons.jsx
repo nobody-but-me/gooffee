@@ -43,7 +43,7 @@ function RoomContent({_title, _text}) {
     
     return (
 	<div className="room_content">
-	    <h2 className="text_justify card">
+	    <h2 className="text_center card">
 		My dear Neighbors.
 	    </h2>
 	    <div className="room_content_image">
@@ -125,14 +125,8 @@ function RoomContent({_title, _text}) {
 		<p>
 		    -- // --
 		</p>
-		<Link target="_blank" to={"https://en.wikipedia.org/wiki/Linux"}>
-		    <img src={_linux}     className="website-button" />
-		</Link>
 		<Link target="_blank" to={"http://www.slackware.com/info/"}>
 		    <img src={_slackware} className="website-button" />
-		</Link>
-		<Link target="_blank" to={_keyboard}>
-		    <img src={_keyboard}  className="website-button" />
 		</Link>
 	    </div>
 	    <BackHouse />
