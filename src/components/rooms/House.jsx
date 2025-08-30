@@ -65,21 +65,24 @@ export default function House() {
 	}
     };
     
-    // the follow is a monstrosity.
     return (
-	<>
-	    <div>
-		{house.map((i, j) => (
-		    <div key={j} className="house_floor">
-			{i.map((k, l) => (
-			    <div key={l} className="tooltip">
-				<button className="room_button" onClick={() => {change_room(k[1])}} onMouseEnter={() => {on_room_mouse_enter(k[1])}} onMouseLeave={() => {on_room_mouse_leave(k[1])}}><span className="tooltip-text">{k[2]}</span></button>
-				<Room id={k[1]} image={k[0]} />
-			    </div>
-			))}
-		    </div>
-		))}
+	<section id="house_page">
+	    {/*<div id="sky"></div>*/}
+	    {/* The follow is a monstrosity */}
+	    <div id="house_content">
+		<div id="house">
+		    {house.map((i, j) => (
+			<nav key={j} className="house_floor">
+			    {i.map((k, l) => (
+				<span key={l} className="tooltip">
+				    <button className="room_button" onClick={() => {change_room(k[1])}} onMouseEnter={() => {on_room_mouse_enter(k[1])}} onMouseLeave={() => {on_room_mouse_leave(k[1])}}><span className="tooltip-text">{k[2]}</span></button>
+				    <Room id={k[1]} image={k[0]} />
+				</span>
+			    ))}
+			</nav>
+		    ))}
+		</div>
 	    </div>
-	</>
+	</section>
     )
 }

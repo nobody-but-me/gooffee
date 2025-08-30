@@ -58,11 +58,13 @@ a:active {
 }
 
 body {
-    margin: 0;
     display: flex;
     place-items: center;
-    min-width: 320px;
     min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    left: 0;
+    top: 0;
 }
 
 h1 {

@@ -110,6 +110,9 @@ function RoomContent({_title, _text}) {
 		<Link target="_blank" to="https://wallace-online.neocities.org/">
 		    <img src={_wallaceonline} className="website-button"/>
 		</Link>
+		<Link target="_blank" to="https://teethinvitro.neocities.org" className="website-text-button" style={{padding:'21px', paddingBottom:'0px'}}>
+		    Teeth in Vitro
+		</Link>
 		<p>
 		    Here's my website button. If you did link me, do not hesitate to tell me.
 		</p>
@@ -120,7 +123,7 @@ function RoomContent({_title, _text}) {
 		    And for those interested in sending me messages: 
 		</p>
 		<Link target="_blank" to={"https://gooffee.atabook.org/"}>
-		    my WebSite's guestbook
+		    Guestbook
 		</Link>;
 		<p>
 		    -- // --
